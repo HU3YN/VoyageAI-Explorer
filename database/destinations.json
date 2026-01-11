@@ -1,0 +1,2154 @@
+[
+  {
+    "country": "France",
+    "cities": [
+      {
+        "name": "Paris",
+        "description": "The City of Light is world-renowned for its art, gastronomy, and iconic landmarks like the Eiffel Tower.",
+        "activities": [
+          "Ascend the Eiffel Tower for panoramic city views.",
+          "Explore the Louvre Museum's vast art collection.",
+          "Walk through the historic Montmartre district.",
+          "Take a scenic boat cruise along the Seine River.",
+          "Visit Notre-Dame Cathedral and the Latin Quarter."
+        ]
+      },
+      {
+        "name": "Nice",
+        "description": "A coastal gem on the French Riviera known for its pebble beaches and the Promenade des Anglais.",
+        "activities": [
+          "Stroll along the Promenade des Anglais.",
+          "Explore the charming Old Town (Vieux Nice).",
+          "Visit the Marc Chagall National Museum.",
+          "Take in the views from Castle Hill (Colline du Château).",
+          "Enjoy fresh seafood at the Cours Saleya market."
+        ]
+      },
+      {
+        "name": "Lyon",
+        "description": "The gastronomic capital of France, famous for its historical architecture and secret 'traboules'.",
+        "activities": [
+          "Dine at a traditional 'Bouchon' restaurant.",
+          "Explore the Renaissance Vieux Lyon district.",
+          "Visit the Basilica of Notre-Dame de Fourvière.",
+          "Discover the hidden secret passages (traboules).",
+          "Walk through the Parc de la Tête d'Or."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Japan",
+    "cities": [
+      {
+        "name": "Tokyo",
+        "description": "A neon-lit metropolis blending futuristic technology with deeply rooted ancient traditions.",
+        "activities": [
+          "Cross the famous Shibuya Crossing.",
+          "Visit the historic Senso-ji Temple in Asakusa.",
+          "Explore the electronics and anime shops in Akihabara.",
+          "Go up the Tokyo Skytree for a bird's eye view.",
+          "Eat fresh sushi at the Tsukiji Outer Market.",
+          "Relax in the Meiji Jingu Shrine forest."
+        ]
+      },
+      {
+        "name": "Kyoto",
+        "description": "The cultural heart of Japan, home to thousands of temples, shrines, and traditional tea houses.",
+        "activities": [
+          "Walk through the thousands of gates at Fushimi Inari-taisha.",
+          "Visit the Golden Pavilion (Kinkaku-ji).",
+          "Explore the Arashiyama Bamboo Grove.",
+          "Walk the Gion District to spot Geisha.",
+          "See the wooden stage of Kiyomizu-dera Temple."
+        ]
+      },
+      {
+        "name": "Osaka",
+        "description": "Japan's 'Kitchen', famous for its street food, vibrant nightlife, and modern architecture.",
+        "activities": [
+          "Eat street food like Takoyaki in Dotonbori.",
+          "Explore the historic Osaka Castle.",
+          "Visit Universal Studios Japan.",
+          "Shop at the massive Shinsaibashi-suji Arcade.",
+          "See the fish at the Osaka Aquarium Kaiyukan."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Italy",
+    "cities": [
+      {
+        "name": "Rome",
+        "description": "The Eternal City, where nearly 3,000 years of globally influential art, architecture, and culture are on display.",
+        "activities": [
+          "Tour the Colosseum and Roman Forum.",
+          "Throw a coin into the Trevi Fountain.",
+          "Visit the Vatican Museums and Sistine Chapel.",
+          "Climb the Spanish Steps.",
+          "Explore the Pantheon's ancient dome."
+        ]
+      },
+      {
+        "name": "Florence",
+        "description": "The birthplace of the Renaissance, home to masterpieces of art and iconic red-tiled architecture.",
+        "activities": [
+          "See Michelangelo’s David at the Accademia Gallery.",
+          "Visit the Uffizi Gallery for Renaissance art.",
+          "Climb the Duomo (Florence Cathedral).",
+          "Walk across the historic Ponte Vecchio bridge.",
+          "Stroll through the Boboli Gardens."
+        ]
+      },
+      {
+        "name": "Venice",
+        "description": "A unique city built on more than 100 small islands in a lagoon in the Adriatic Sea.",
+        "activities": [
+          "Take a traditional Gondola ride through canals.",
+          "Visit St. Mark's Basilica and the Square.",
+          "Tour the Doge's Palace.",
+          "Cross the Rialto Bridge.",
+          "Explore the glass-making island of Murano."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Spain",
+    "cities": [
+      {
+        "name": "Barcelona",
+        "description": "A vibrant coastal city famous for its unique Gaudí architecture, lively beaches, and world-class tapas.",
+        "activities": [
+          "Marvel at the unfinished Sagrada Família.",
+          "Stroll through the whimsical Park Güell.",
+          "Walk the bustling pedestrian street of La Rambla.",
+          "Enjoy fresh seafood at the Barceloneta beach.",
+          "Explore the historic Gothic Quarter."
+        ]
+      },
+      {
+        "name": "Madrid",
+        "description": "Spain's central capital, known for its elegant boulevards, expansive parks, and rich European art collections.",
+        "activities": [
+          "Visit the Prado Museum for world-class art.",
+          "Relax in the sprawling El Retiro Park.",
+          "See the opulent Royal Palace of Madrid.",
+          "Eat traditional tapas at Mercado de San Miguel.",
+          "Watch the sunset at the Temple of Debod."
+        ]
+      },
+      {
+        "name": "Seville",
+        "description": "The sun-drenched heart of Andalusia, famous for flamenco dancing and Moorish history.",
+        "activities": [
+          "Tour the stunning Royal Alcázar of Seville.",
+          "Climb the Giralda tower at the Cathedral.",
+          "Watch an authentic Flamenco show in Triana.",
+          "Visit the Plaza de España for its tiled alcoves.",
+          "Wander the narrow streets of the Santa Cruz district."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "United States",
+    "cities": [
+      {
+        "name": "New York City",
+        "description": "The 'Big Apple' is a global center of finance, culture, and entertainment with an iconic skyline.",
+        "activities": [
+          "Walk through the neon lights of Times Square.",
+          "Take a ferry to the Statue of Liberty.",
+          "Walk across the historic Brooklyn Bridge.",
+          "See a Broadway musical in the Theater District.",
+          "Visit the 9/11 Memorial & Museum."
+        ]
+      },
+      {
+        "name": "Los Angeles",
+        "description": "The world's entertainment capital, known for Hollywood glamour, sprawling beaches, and diverse food.",
+        "activities": [
+          "Hike to the Hollywood Sign for a classic photo.",
+          "Stroll along the Santa Monica Pier.",
+          "Explore the Getty Center’s art and gardens.",
+          "Walk the Hollywood Walk of Fame.",
+          "Visit the Griffith Observatory for city views."
+        ]
+      },
+      {
+        "name": "New Orleans",
+        "description": "A soulful city famous for its jazz music, French-Creole cuisine, and lively Mardi Gras celebrations.",
+        "activities": [
+          "Listen to live jazz on Frenchmen Street.",
+          "Eat beignets at the historic Café Du Monde.",
+          "Explore the historic architecture of the French Quarter.",
+          "Take a swamp tour to spot alligators.",
+          "Walk through the spooky Garden District cemeteries."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Turkey",
+    "cities": [
+      {
+        "name": "Istanbul",
+        "description": "The only city in the world spanning two continents, rich with Byzantine and Ottoman history.",
+        "activities": [
+          "Explore the majestic Hagia Sophia.",
+          "Wander the labyrinthine Grand Bazaar.",
+          "Visit the ornate Blue Mosque.",
+          "Take a cruise on the Bosphorus Strait.",
+          "See the crown jewels at Topkapi Palace."
+        ]
+      },
+      {
+        "name": "Antalya",
+        "description": "A gateway to the Turkish Riviera, blending ancient Roman ruins with turquoise Mediterranean waters.",
+        "activities": [
+          "Walk through Hadrian’s Gate into the Old Town.",
+          "Relax on the sandy shores of Lara Beach.",
+          "Visit the Düden Waterfalls dropping into the sea.",
+          "Explore the ancient Roman theater of Aspendos.",
+          "Hike parts of the scenic Lycian Way."
+        ]
+      },
+      {
+        "name": "Cappadocia (Göreme)",
+        "description": "A surreal landscape famous for its 'fairy chimney' rock formations and underground cities.",
+        "activities": [
+          "Take a sunrise hot air balloon flight.",
+          "Stay in a traditional cave hotel.",
+          "Explore the Göreme Open Air Museum.",
+          "Hike through the stunning Rose Valley.",
+          "Visit the multi-level Kaymakli Underground City."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Mexico",
+    "cities": [
+      {
+        "name": "Mexico City",
+        "description": "A high-altitude metropolis known for its ancient ruins, colonial architecture, and world-class cuisine.",
+        "activities": [
+          "Visit the massive Zócalo (main square).",
+          "Explore the ancient pyramids of Teotihuacán.",
+          "See Frida Kahlo’s 'Blue House' in Coyoacán.",
+          "Wander through the sprawling Chapultepec Park.",
+          "Eat street tacos in the Roma and Condesa areas."
+        ]
+      },
+      {
+        "name": "Cancún",
+        "description": "A world-famous resort destination known for its white-sand beaches and turquoise Caribbean waters.",
+        "activities": [
+          "Snorkel or dive in the MUSA underwater museum.",
+          "Take a day trip to the ruins of Chichén Itzá.",
+          "Swim in the refreshing waters of a nearby Cenote.",
+          "Relax at the white-sand Playa Delfines.",
+          "Take a ferry to the beautiful Isla Mujeres."
+        ]
+      },
+      {
+        "name": "Oaxaca",
+        "description": "A cultural gem famous for its indigenous traditions, colorful markets, and legendary mole sauce.",
+        "activities": [
+          "Explore the Zapotec ruins of Monte Albán.",
+          "Visit the vibrant Tlacolula Sunday Market.",
+          "Try different varieties of Mezcal at a distillery.",
+          "Photograph the stunning petrified waterfalls of Hierve el Agua.",
+          "Visit the Santo Domingo Church and Museum."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "cities": [
+      {
+        "name": "London",
+        "description": "A global city rich in history, home to the British Monarchy and world-leading museums.",
+        "activities": [
+          "Watch the Changing of the Guard at Buckingham Palace.",
+          "See the Crown Jewels at the Tower of London.",
+          "Ride the London Eye for views of the Thames.",
+          "Explore the British Museum's global artifacts.",
+          "Walk through the colorful markets of Camden Town."
+        ]
+      },
+      {
+        "name": "Edinburgh",
+        "description": "Scotland's hilly capital, known for its medieval Old Town and neoclassical New Town.",
+        "activities": [
+          "Tour the historic Edinburgh Castle.",
+          "Walk the 'Royal Mile' through the Old Town.",
+          "Hike up Arthur's Seat for a panoramic view.",
+          "Visit the Palace of Holyroodhouse.",
+          "Explore the National Museum of Scotland."
+        ]
+      },
+      {
+        "name": "Bath",
+        "description": "An elegant city famous for its Roman-built baths and honey-colored Georgian architecture.",
+        "activities": [
+          "Tour the ancient Roman Baths.",
+          "Visit the majestic Bath Abbey.",
+          "Walk across the picturesque Pulteney Bridge.",
+          "Admire the architecture of the Royal Crescent.",
+          "Relax in the modern Thermae Bath Spa."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Germany",
+    "cities": [
+      {
+        "name": "Berlin",
+        "description": "A city defined by its grit, history, and cutting-edge art scene, Berlin is both a memorial and a playground.",
+        "activities": [
+          "Walk through the Brandenburg Gate.",
+          "Visit the East Side Gallery to see the Berlin Wall remains.",
+          "Explore the world-class museums on Museum Island.",
+          "See the dome of the Reichstag Building.",
+          "Enjoy the nightlife in the Kreuzberg district.",
+          "Visit the Memorial to the Murdered Jews of Europe."
+        ]
+      },
+      {
+        "name": "Munich",
+        "description": "The capital of Bavaria, famous for its annual Oktoberfest, beautiful plazas, and proximity to the Alps.",
+        "activities": [
+          "Watch the Glockenspiel show at Marienplatz.",
+          "Relax with a beer at the English Garden.",
+          "Tour the Residenz, the former royal palace.",
+          "Visit the BMW Museum and Welt.",
+          "Take a day trip to Neuschwanstein Castle.",
+          "Explore the Deutsches Museum."
+        ]
+      },
+      {
+        "name": "Cologne",
+        "description": "A 2,000-year-old city on the Rhine River, known for its Gothic architecture and cultural landmarks.",
+        "activities": [
+          "Marvel at the twin spires of the Cologne Cathedral.",
+          "Walk across the Love Lock Bridge (Hohenzollern Bridge).",
+          "Visit the Chocolate Museum by the river.",
+          "Stroll through the colorful Old Town (Altstadt).",
+          "Take a panoramic Rhine River cruise."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Thailand",
+    "cities": [
+      {
+        "name": "Bangkok",
+        "description": "A frantic, fascinating capital known for ornate shrines, vibrant street life, and world-renowned food.",
+        "activities": [
+          "Tour the dazzling Grand Palace and Wat Phra Kaew.",
+          "Take a boat taxi across the Chao Phraya River.",
+          "Shop at the massive Chatuchak Weekend Market.",
+          "Visit the reclining Buddha at Wat Pho.",
+          "Experience the nightlife on Khao San Road.",
+          "Eat Michelin-starred street food in Yaowarat (Chinatown)."
+        ]
+      },
+      {
+        "name": "Chiang Mai",
+        "description": "The mountainous heart of Northern Thailand, known for its mist-covered peaks and historic temples.",
+        "activities": [
+          "Hike up to the Wat Phra That Doi Suthep temple.",
+          "Visit an ethical Elephant Nature Park.",
+          "Wander the Sunday Night Walking Street market.",
+          "Take a Thai cooking class in a local home.",
+          "Explore the ruins of Wat Chedi Luang."
+        ]
+      },
+      {
+        "name": "Phuket",
+        "description": "Thailand's largest island, famous for its white-sand beaches, clear waters, and lively nightlife.",
+        "activities": [
+          "Relax on the sands of Patong or Kata Beach.",
+          "Take a speedboat tour to the Phi Phi Islands.",
+          "Visit the 45-meter tall Big Buddha statue.",
+          "Explore the colorful Sino-Portuguese architecture of Old Phuket Town.",
+          "Go snorkeling or diving in the Andaman Sea."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Greece",
+    "cities": [
+      {
+        "name": "Athens",
+        "description": "The cradle of Western civilization, where ancient ruins sit alongside modern urban life.",
+        "activities": [
+          "Climb the Acropolis to see the Parthenon.",
+          "Explore the narrow, historic streets of Plaka.",
+          "See the Changing of the Guard at Syntagma Square.",
+          "Visit the National Archaeological Museum.",
+          "Hike up Lycabettus Hill for a sunset view of the city."
+        ]
+      },
+      {
+        "name": "Santorini (Oia)",
+        "description": "Famous for its whitewashed houses clinging to cliffs and stunning blue-domed churches overlooking the sea.",
+        "activities": [
+          "Watch the world-famous sunset from Oia Castle.",
+          "Hike the trail from Fira to Oia.",
+          "Take a boat tour to the volcanic Nea Kameni.",
+          "Relax on the unique Black Sand Beach in Perissa.",
+          "Taste local Assyrtiko wine at a cliffside winery."
+        ]
+      },
+      {
+        "name": "Mykonos",
+        "description": "Greece's premier party island, also known for its iconic windmills and beautiful Cycladic architecture.",
+        "activities": [
+          "Photograph the famous 16th-century windmills.",
+          "Stroll through the 'Little Venice' waterfront.",
+          "Party at world-famous beach clubs like Paradise Beach.",
+          "Take a day trip to the sacred ruins of Delos.",
+          "Wander the labyrinthine streets of Mykonos Town."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "United Arab Emirates",
+    "cities": [
+      {
+        "name": "Dubai",
+        "description": "A city of superlatives, home to the world's tallest building, largest malls, and man-made islands.",
+        "activities": [
+          "Visit the top of the Burj Khalifa.",
+          "Shop and see the aquarium in the Dubai Mall.",
+          "Take a desert safari with dune bashing and dinner.",
+          "Walk along the Dubai Marina promenade.",
+          "Cross the Creek in a traditional Abra boat.",
+          "See the fountain show at the base of the Burj."
+        ]
+      },
+      {
+        "name": "Abu Dhabi",
+        "description": "The capital of the UAE, offering a more tranquil but equally luxurious experience than Dubai.",
+        "activities": [
+          "Marvel at the Sheikh Zayed Grand Mosque.",
+          "Visit the Louvre Abu Dhabi art museum.",
+          "Drive or ride at Ferrari World on Yas Island.",
+          "Walk the scenic Corniche beachfront.",
+          "Explore the Qasr Al Watan presidential palace."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Portugal",
+    "cities": [
+      {
+        "name": "Lisbon",
+        "description": "A hilly, coastal capital known for its yellow trams, fado music, and maritime history.",
+        "activities": [
+          "Ride the historic Tram 28 through old neighborhoods.",
+          "Visit the Jerónimos Monastery and Belém Tower.",
+          "Eat a 'Pastel de Nata' at the original factory.",
+          "Listen to live Fado in the Alfama district.",
+          "Enjoy the views from the São Jorge Castle."
+        ]
+      },
+      {
+        "name": "Porto",
+        "description": "Famous for its port wine production, bridges, and the colorful Ribeira riverfront.",
+        "activities": [
+          "Take a port wine tasting tour in Gaia.",
+          "Walk across the Dom Luís I Bridge.",
+          "Visit the stunning Livraria Lello bookstore.",
+          "Explore the historic Ribeira District.",
+          "See the azulejo tiles at São Bento Station."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "China",
+    "cities": [
+      {
+        "name": "Beijing",
+        "description": "The political and cultural heart of China, home to some of the world's most iconic imperial history.",
+        "activities": [
+          "Walk the Mutianyu section of the Great Wall.",
+          "Explore the massive Forbidden City complex.",
+          "Visit the Temple of Heaven park.",
+          "Wander through traditional Hutong alleyways.",
+          "Eat authentic Peking Duck at a local eatery.",
+          "Visit the Summer Palace and its Kunming Lake."
+        ]
+      },
+      {
+        "name": "Shanghai",
+        "description": "A futuristic global financial hub known for its skyline, historic waterfront, and luxury shopping.",
+        "activities": [
+          "Walk along The Bund for views of Pudong's skyscrapers.",
+          "Go to the top of the Shanghai Tower.",
+          "Explore the classical Yu Garden.",
+          "Shop and dine in the French Concession.",
+          "Take a day trip to the Zhujiajiao Water Town."
+        ]
+      },
+      {
+        "name": "Xi'an",
+        "description": "One of China's Four Great Ancient Capitals and the eastern terminus of the Silk Road.",
+        "activities": [
+          "See the thousands of Terracotta Warriors.",
+          "Bike along the top of the ancient City Wall.",
+          "Visit the Giant Wild Goose Pagoda.",
+          "Explore the vibrant Muslim Quarter for street food.",
+          "Watch the Tang Dynasty music and dance show."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "cities": [
+      {
+        "name": "Sydney",
+        "description": "A stunning harbor city famous for its opera house, surfing culture, and golden beaches.",
+        "activities": [
+          "Take a tour of the Sydney Opera House.",
+          "Walk the coastal path from Bondi to Coogee Beach.",
+          "Climb the Sydney Harbour Bridge.",
+          "Take a ferry to Manly for harbor views.",
+          "Explore the historic Rocks district.",
+          "See the Blue Mountains on a day trip."
+        ]
+      },
+      {
+        "name": "Melbourne",
+        "description": "The cultural capital of Australia, known for its coffee, laneways, and passion for sports.",
+        "activities": [
+          "Discover hidden street art in Hosier Lane.",
+          "Take the Great Ocean Road drive to the Twelve Apostles.",
+          "Grab a world-class coffee in the CBD.",
+          "Visit the Queen Victoria Market.",
+          "Ride the historic City Circle Tram."
+        ]
+      },
+      {
+        "name": "Cairns",
+        "description": "The gateway to the Great Barrier Reef and the ancient Daintree Rainforest.",
+        "activities": [
+          "Snorkel or dive the Great Barrier Reef.",
+          "Take the Kuranda Scenic Railway through the jungle.",
+          "Swim at the Cairns Esplanade Lagoon.",
+          "Explore the Daintree Rainforest and Cape Tribulation.",
+          "Visit the Tjapukai Aboriginal Cultural Park."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Vietnam",
+    "cities": [
+      {
+        "name": "Hanoi",
+        "description": "A historic, chaotic capital known for its centuries-old architecture and rich French-Asian culture.",
+        "activities": [
+          "Explore the Old Quarter's 36 streets.",
+          "Visit the Ho Chi Minh Mausoleum complex.",
+          "Take a day trip to the limestone karsts of Ha Long Bay.",
+          "Watch a traditional Water Puppet show.",
+          "Try 'Egg Coffee' (Cà Phê Trứng) at a local cafe.",
+          "Walk around the peaceful Hoan Kiem Lake."
+        ]
+      },
+      {
+        "name": "Ho Chi Minh City",
+        "description": "A high-energy metropolis formerly known as Saigon, blending French colonial history with modern life.",
+        "activities": [
+          "Visit the War Remnants Museum.",
+          "Explore the underground Củ Chi Tunnels.",
+          "Shop for bargains at Ben Thanh Market.",
+          "See the Notre-Dame Cathedral Basilica of Saigon.",
+          "Take a dinner cruise on the Saigon River."
+        ]
+      },
+      {
+        "name": "Hoi An",
+        "description": "A charming, well-preserved Ancient Town famous for its colorful lanterns and tailor shops.",
+        "activities": [
+          "Walk through the lantern-lit Old Town at night.",
+          "Get custom-made clothes from local tailors.",
+          "Take a cooking class to learn Central Vietnamese cuisine.",
+          "Relax at An Bang Beach.",
+          "Visit the Japanese Covered Bridge."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "cities": [
+      {
+        "name": "Toronto",
+        "description": "Canada's largest city, a diverse and bustling metropolis located on the shores of Lake Ontario.",
+        "activities": [
+          "Go to the top of the CN Tower.",
+          "Explore the historic Distillery District.",
+          "Take a ferry to the Toronto Islands.",
+          "Visit the Royal Ontario Museum.",
+          "Take a day trip to the massive Niagara Falls.",
+          "Shop at the St. Lawrence Market."
+        ]
+      },
+      {
+        "name": "Vancouver",
+        "description": "A coastal seaport city surrounded by mountains, known for its outdoor lifestyle and film industry.",
+        "activities": [
+          "Bike the seawall at Stanley Park.",
+          "Walk across the Capilano Suspension Bridge.",
+          "Explore the Granville Island Public Market.",
+          "Take a gondola up Grouse Mountain.",
+          "Visit the historic Gastown district and steam clock."
+        ]
+      },
+      {
+        "name": "Quebec City",
+        "description": "A touch of Europe in North America, with a fortified old town that is a UNESCO World Heritage site.",
+        "activities": [
+          "Walk the historic streets of Old Quebec.",
+          "Photograph the iconic Fairmont Le Château Frontenac.",
+          "Visit the Montmorency Falls.",
+          "Walk the Plains of Abraham park.",
+          "Explore the boutiques of Quartier Petit Champlain."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "cities": [
+      {
+        "name": "Ubud (Bali)",
+        "description": "The spiritual and artistic heart of Bali, nestled among lush rice terraces and rainforests.",
+        "activities": [
+          "Visit the Sacred Monkey Forest Sanctuary.",
+          "Walk through the Tegalalang Rice Terraces.",
+          "Shop for local crafts at the Ubud Art Market.",
+          "Take a Balinese yoga or meditation class.",
+          "Visit the Tirta Empul holy water temple."
+        ]
+      },
+      {
+        "name": "Jakarta",
+        "description": "A massive, energetic capital known for its melting-pot culture and world-class shopping malls.",
+        "activities": [
+          "Visit the National Monument (Monas).",
+          "Explore the Old Town (Kota Tua) and its Dutch history.",
+          "Shop at the high-end Grand Indonesia mall.",
+          "Visit the Istiqlal Mosque, the largest in Southeast Asia.",
+          "Take a day trip to the Thousand Islands (Pulau Seribu)."
+        ]
+      },
+      {
+        "name": "Yogyakarta",
+        "description": "The soul of Java, known as a center for classical Javanese fine art and culture.",
+        "activities": [
+          "Explore the massive Borobudur Buddhist temple.",
+          "Visit the Prambanan Hindu temple complex.",
+          "Tour the Kraton (Sultan's Palace).",
+          "Shop for silver and batik on Malioboro Street.",
+          "Watch a Ramayana Ballet performance."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Switzerland",
+    "cities": [
+      {
+        "name": "Zurich",
+        "description": "A global center for banking and finance that lies at the north end of Lake Zurich with a beautifully preserved Old Town.",
+        "activities": [
+          "Wander the cobbled streets of the Altstadt (Old Town).",
+          "Window shop along the upscale Bahnhofstrasse.",
+          "Take a boat cruise across Lake Zurich.",
+          "Visit the Grossmünster and Fraumünster churches.",
+          "Explore the Swiss National Museum.",
+          "Swim in the 'badis' (river pools) during summer."
+        ]
+      },
+      {
+        "name": "Lucerne",
+        "description": "A compact city known for its preserved medieval architecture and stunning location on Lake Lucerne amidst snowcapped mountains.",
+        "activities": [
+          "Walk across the 14th-century Chapel Bridge.",
+          "Visit the moving Lion Monument carven into rock.",
+          "Take the world's steepest cogwheel railway to Mt. Pilatus.",
+          "Explore the Swiss Museum of Transport.",
+          "Enjoy a scenic paddle steamer cruise on the lake."
+        ]
+      },
+      {
+        "name": "Zermatt",
+        "description": "A car-free mountain resort famous for skiing, climbing, and the iconic, pyramid-shaped Matterhorn peak.",
+        "activities": [
+          "Ride the Gornergrat Railway for Matterhorn views.",
+          "Ski or snowboard at the Matterhorn Glacier Paradise.",
+          "Hike the Five Lakes Trail.",
+          "Dine at a cozy mountain hut with traditional fondue.",
+          "Explore the Matterhorn Museum (Zermatlantis)."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "South Korea",
+    "cities": [
+      {
+        "name": "Seoul",
+        "description": "A huge metropolis where modern skyscrapers and high-tech subways meet Buddhist temples, palaces, and street markets.",
+        "activities": [
+          "Visit Gyeongbokgung Palace and watch the guard change.",
+          "Shop for skincare and fashion in Myeongdong.",
+          "Explore the traditional Bukchon Hanok Village.",
+          "Eat at Gwangjang Market (famous for street food).",
+          "See the city views from N Seoul Tower.",
+          "Hike the trails in Bukhansan National Park."
+        ]
+      },
+      {
+        "name": "Busan",
+        "description": "A large port city known for its beaches, mountains, and temples, offering a more relaxed vibe than Seoul.",
+        "activities": [
+          "Relax on the popular Haeundae Beach.",
+          "Explore the colorful Gamcheon Culture Village.",
+          "Visit the Haedong Yonggungsa seaside temple.",
+          "Eat fresh seafood at Jagalchi Fish Market.",
+          "Walk the glass-bottomed Oryukdo Skywalk."
+        ]
+      },
+      {
+        "name": "Gyeongju",
+        "description": "Often called a 'museum without walls,' it was the capital of the ancient Silla Kingdom for 1,000 years.",
+        "activities": [
+          "Visit the Bulguksa Temple, a UNESCO site.",
+          "See the ancient royal burial mounds at Daereungwon.",
+          "Explore the Seokguram Grotto.",
+          "Walk around the Anapji Pond at night.",
+          "Visit the Gyeongju National Museum."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Egypt",
+    "cities": [
+      {
+        "name": "Cairo",
+        "description": "The chaotic, sprawling capital of Egypt, home to ancient Pharaonic history and Islamic architecture.",
+        "activities": [
+          "Tour the Giza Pyramids and the Great Sphinx.",
+          "Explore the treasures of the Grand Egyptian Museum.",
+          "Shop for spices and gold at Khan el-Khalili bazaar.",
+          "Visit the Saladin Citadel and Mosque of Muhammad Ali.",
+          "Take a sunset felucca ride on the Nile River."
+        ]
+      },
+      {
+        "name": "Luxor",
+        "description": "Known as the 'world's greatest open-air museum,' built on the site of the ancient city of Thebes.",
+        "activities": [
+          "Explore the Valley of the Kings tombs.",
+          "Visit the massive Karnak Temple Complex.",
+          "See the Temple of Hatshepsut at Deir el-Bahari.",
+          "Take a sunrise hot air balloon over the Nile.",
+          "Tour the Luxor Temple by night."
+        ]
+      },
+      {
+        "name": "Aswan",
+        "description": "A peaceful city on the Nile in southern Egypt, known for its Nubian culture and archaeological sites.",
+        "activities": [
+          "Visit the majestic Temple of Philae by boat.",
+          "Take a day trip to the Great Temples of Abu Simbel.",
+          "Sail to Elephantine Island.",
+          "Visit a traditional Nubian Village.",
+          "See the Unfinished Obelisk in the ancient quarries."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Brazil",
+    "cities": [
+      {
+        "name": "Rio de Janeiro",
+        "description": "A huge seaside city famed for its Copacabana and Ipanema beaches, and the Christ the Redeemer statue.",
+        "activities": [
+          "Take the train to the Christ the Redeemer statue.",
+          "Ride the cable car up Sugarloaf Mountain.",
+          "Relax or surf at Ipanema Beach.",
+          "Visit the colorful Selarón Steps.",
+          "Wander the Tijuca National Park rainforest.",
+          "Watch a samba show in the Lapa neighborhood."
+        ]
+      },
+      {
+        "name": "São Paulo",
+        "description": "A massive, diverse financial hub known for its architecture, gastronomy, and vibrant art scene.",
+        "activities": [
+          "Stroll along the iconic Paulista Avenue.",
+          "Visit the São Paulo Museum of Art (MASP).",
+          "Relax in Ibirapuera Park.",
+          "Eat a mortadella sandwich at the Municipal Market.",
+          "Explore the street art in Beco do Batman."
+        ]
+      },
+      {
+        "name": "Salvador",
+        "description": "The capital of Bahia, known for its Portuguese colonial architecture, Afro-Brazilian culture, and tropical coastline.",
+        "activities": [
+          "Explore the historic Pelourinho district.",
+          "Take the Lacerda Elevator for bay views.",
+          "Watch a Capoeira performance in the square.",
+          "Visit the Church of São Francisco (Golden Church).",
+          "Relax at Porto da Barra Beach."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "cities": [
+      {
+        "name": "Amsterdam",
+        "description": "The capital known for its artistic heritage, elaborate canal system, and narrow gabled houses.",
+        "activities": [
+          "Take a canal cruise through the historic center.",
+          "Visit the Van Gogh Museum.",
+          "Explore the Rijksmuseum's Dutch masterpieces.",
+          "Tour the Anne Frank House.",
+          "Rent a bike and explore Vondelpark.",
+          "Visit the floating Flower Market (Bloemenmarkt)."
+        ]
+      },
+      {
+        "name": "Rotterdam",
+        "description": "A major port city known for its bold, modern architecture and vibrant maritime history.",
+        "activities": [
+          "Visit the famous yellow Cube Houses.",
+          "Explore the massive Markthal food market.",
+          "Walk across the Erasmus Bridge.",
+          "Go up the Euromast for panoramic views.",
+          "Tour the SS Rotterdam (historic steamship)."
+        ]
+      },
+      {
+        "name": "The Hague",
+        "description": "The city of peace and justice, home to the Dutch parliament and the International Court of Justice.",
+        "activities": [
+          "See Vermeer's 'Girl with a Pearl Earring' at the Mauritshuis.",
+          "Visit the Binnenhof (seat of parliament).",
+          "Relax at the beach in Scheveningen.",
+          "Explore Madurodam (miniature city).",
+          "Visit the Peace Palace."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "India",
+    "cities": [
+      {
+        "name": "New Delhi",
+        "description": "The capital of India, a massive metropolitan area in the country's north blending ancient history with modern chaos.",
+        "activities": [
+          "Visit the iconic Red Fort.",
+          "Wander through the narrow lanes of Chandni Chowk market.",
+          "Explore the historic Humayun’s Tomb.",
+          "See the towering Qutub Minar.",
+          "Take a moment of peace at the Lotus Temple."
+        ]
+      },
+      {
+        "name": "Agra",
+        "description": "Home to the world's most famous monument to love, Agra is a cornerstone of India's 'Golden Triangle'.",
+        "activities": [
+          "Watch the sunrise at the Taj Mahal.",
+          "Explore the massive red sandstone Agra Fort.",
+          "Visit the 'Baby Taj' (Tomb of I'timad-ud-Daulah).",
+          "Take a day trip to the ancient city of Fatehpur Sikri.",
+          "Shop for intricate marble inlay handicrafts."
+        ]
+      },
+      {
+        "name": "Jaipur",
+        "description": "Known as the 'Pink City', Jaipur is famous for its royal palaces, forts, and vibrant jewelry markets.",
+        "activities": [
+          "Visit the honeycomb-shaped Hawa Mahal.",
+          "Ride up to the hilltop Amer Fort.",
+          "Explore the City Palace and its royal museum.",
+          "See the ancient astronomical instruments at Jantar Mantar.",
+          "Go jewelry shopping in the Johari Bazaar."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Morocco",
+    "cities": [
+      {
+        "name": "Marrakech",
+        "description": "A former imperial city known for its mosques, palaces, and gardens, centered around the bustling Jemaa el-Fnaa square.",
+        "activities": [
+          "Get lost in the labyrinthine Souks of the Medina.",
+          "Visit the Jardin Majorelle, once owned by Yves Saint Laurent.",
+          "Watch the evening street performers at Jemaa el-Fnaa.",
+          "Explore the ornate Bahia Palace.",
+          "Take a day trip to the Atlas Mountains."
+        ]
+      },
+      {
+        "name": "Fes",
+        "description": "Morocco's cultural capital, home to the world's oldest continuously operating university and a medieval old city.",
+        "activities": [
+          "Wander through Fes el Bali (the world's largest car-free urban zone).",
+          "See the famous Chouara Tannery from a terrace.",
+          "Visit the Al-Attarine Madrasa for its intricate tilework.",
+          "Explore the Royal Palace (Dar al-Makhzen) gates.",
+          "Take a pottery workshop in the artisans' district."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Singapore",
+    "cities": [
+      {
+        "name": "Singapore City",
+        "description": "A global financial center and city-state known for its futuristic architecture and world-class street food.",
+        "activities": [
+          "Visit the Supertree Grove at Gardens by the Bay.",
+          "Take a photo with the iconic Merlion statue.",
+          "Walk through the Cloud Forest dome.",
+          "Eat at a Michelin-rated Hawker Centre like Maxwell Road.",
+          "Shop until you drop on Orchard Road.",
+          "See the views from the Marina Bay Sands SkyPark."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "South Africa",
+    "cities": [
+      {
+        "name": "Cape Town",
+        "description": "A port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain.",
+        "activities": [
+          "Take the cable car up Table Mountain.",
+          "Visit the penguins at Boulders Beach.",
+          "Drive the scenic Chapman’s Peak Drive.",
+          "Tour the historic Robben Island.",
+          "Enjoy wine tasting in the nearby Constantia Valley."
+        ]
+      },
+      {
+        "name": "Johannesburg",
+        "description": "South Africa's biggest city and a hub of culture and history, formerly home to Nelson Mandela and Desmond Tutu.",
+        "activities": [
+          "Visit the emotional Apartheid Museum.",
+          "Take a guided tour of the Soweto township.",
+          "Explore the Maboneng Precinct's art and cafes.",
+          "Visit the Cradle of Humankind (UNESCO site).",
+          "See the Constitution Hill Human Rights Precinct."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Austria",
+    "cities": [
+      {
+        "name": "Vienna",
+        "description": "A city famous for its imperial history, classical music, and elegant coffee house culture.",
+        "activities": [
+          "Tour the opulent Schönbrunn Palace and gardens.",
+          "Watch a performance at the Vienna State Opera.",
+          "Enjoy a Sacher Torte at a traditional cafe.",
+          "Visit the St. Stephen's Cathedral.",
+          "See Gustav Klimt’s 'The Kiss' at the Belvedere Palace."
+        ]
+      },
+      {
+        "name": "Salzburg",
+        "description": "The birthplace of Mozart and the filming location for 'The Sound of Music', nestled in the Alps.",
+        "activities": [
+          "Visit Mozart's Birthplace on Getreidegasse.",
+          "Explore the Hohensalzburg Fortress.",
+          "Take a 'Sound of Music' filming location tour.",
+          "Stroll through the Mirabell Palace gardens.",
+          "Wander the historic Old Town (Altstadt)."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Ireland",
+    "cities": [
+      {
+        "name": "Dublin",
+        "description": "A capital city rich in literature and history, known for its friendly locals and historic pubs.",
+        "activities": [
+          "Visit the Guinness Storehouse for a pint with a view.",
+          "See the Book of Kells at Trinity College Library.",
+          "Explore the lively Temple Bar district.",
+          "Walk through St. Stephen's Green.",
+          "Tour the historic Kilmainham Gaol."
+        ]
+      },
+      {
+        "name": "Galway",
+        "description": "A bohemian harbor city on Ireland’s west coast, known as the 'City of Tribes'.",
+        "activities": [
+          "Listen to buskers on Shop Street.",
+          "Take a day trip to the stunning Cliffs of Moher.",
+          "Walk the Salthill Promenade.",
+          "Explore the Spanish Arch and Latin Quarter.",
+          "Take a ferry to the remote Aran Islands."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "New Zealand",
+    "cities": [
+      {
+        "name": "Queenstown",
+        "description": "The 'Adventure Capital of the World', famous for its dramatic scenery and high-octane sports.",
+        "activities": [
+          "Go bungee jumping at the Kawarau Bridge.",
+          "Take a cruise on the stunning Milford Sound.",
+          "Ride the Skyline Gondola for lake views.",
+          "Try a world-famous Fergburger.",
+          "Go jet boating on the Shotover River."
+        ]
+      },
+      {
+        "name": "Auckland",
+        "description": "A major city in the north of New Zealand’s North Island, built around two large harbors.",
+        "activities": [
+          "Take the ferry to Waiheke Island for wine tasting.",
+          "Go to the top of the Sky Tower.",
+          "Explore the Auckland War Memorial Museum.",
+          "Hike up the dormant volcano, Mt. Eden.",
+          "Visit the Hobbiton Movie Set on a day trip."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Iceland",
+    "cities": [
+      {
+        "name": "Reykjavik",
+        "description": "The world's northernmost capital, known for its colorful houses and proximity to geothermal wonders.",
+        "activities": [
+          "Soak in the milky blue waters of the Blue Lagoon.",
+          "See the Hallgrímskirkja church's unique architecture.",
+          "Drive the 'Golden Circle' route to see Geysir and Gullfoss.",
+          "Go whale watching from the Old Harbour.",
+          "Search for the Northern Lights (Aurora Borealis)."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Norway",
+    "cities": [
+      {
+        "name": "Oslo",
+        "description": "A city on the coast surrounded by mountains and sea, known for its green spaces and museums.",
+        "activities": [
+          "Visit the Vigeland Sculpture Park.",
+          "Explore the Fram Museum for polar exploration history.",
+          "Walk on the roof of the Oslo Opera House.",
+          "See the Munch Museum and 'The Scream'.",
+          "Take a boat trip on the Oslofjord."
+        ]
+      },
+      {
+        "name": "Bergen",
+        "description": "The gateway to the fjords, famous for its colorful wooden houses on the old wharf.",
+        "activities": [
+          "Walk through the UNESCO-listed Bryggen wharf.",
+          "Take the Fløibanen funicular up Mount Fløyen.",
+          "Visit the vibrant Fish Market.",
+          "Explore the Edvard Grieg Museum at Troldhaugen.",
+          "Take a day trip to Sognefjord or Hardangerfjord."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Peru",
+    "cities": [
+      {
+        "name": "Cusco",
+        "description": "Once the capital of the Inca Empire, Cusco is now a hub for travelers heading to Machu Picchu.",
+        "activities": [
+          "Explore the ruins of Sacsayhuamán.",
+          "Visit the Qorikancha (Temple of the Sun).",
+          "Wander the San Blas artisan neighborhood.",
+          "Shop for textiles at the San Pedro Market.",
+          "Take the train or hike to Machu Picchu."
+        ]
+      },
+      {
+        "name": "Lima",
+        "description": "The capital of Peru, a coastal city known for its colonial center and incredible culinary scene.",
+        "activities": [
+          "Dine at one of the world's top-ranked restaurants in Miraflores.",
+          "Walk the coastal clifftops of the Malecón.",
+          "Explore the Larco Museum’s pre-Columbian art.",
+          "Visit the historic Plaza de Armas.",
+          "See the 'Magic Water Circuit' light show."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Argentina",
+    "cities": [
+      {
+        "name": "Buenos Aires",
+        "description": "The 'Paris of the South', known for its European architecture, passionate tango culture, and world-class steakhouses.",
+        "activities": [
+          "Watch a tango show in San Telmo.",
+          "Visit the colorful houses of Caminito in La Boca.",
+          "Tour the ornate Recoleta Cemetery.",
+          "Eat a traditional steak at a 'Parrilla'.",
+          "Walk through the sprawling Palermo Woods."
+        ]
+      },
+      {
+        "name": "Mendoza",
+        "description": "Located at the foot of the Andes, it is the heart of Argentina's wine country and Malbec production.",
+        "activities": [
+          "Take a winery tour through Luján de Cuyo.",
+          "Bike through the vineyards of Maipú.",
+          "Go whitewater rafting on the Mendoza River.",
+          "Visit the General San Martín Park.",
+          "Enjoy a traditional 'Asado' outdoor barbecue."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Chile",
+    "cities": [
+      {
+        "name": "Santiago",
+        "description": "A valley-bound capital surrounded by snow-capped peaks, blending colonial history with modern skyscrapers.",
+        "activities": [
+          "Take the funicular up San Cristóbal Hill.",
+          "Visit the Museum of Memory and Human Rights.",
+          "Explore the historic Plaza de Armas.",
+          "Eat fresh seafood at the Mercado Central.",
+          "Take a day trip to the Casablanca Valley wineries."
+        ]
+      },
+      {
+        "name": "Valparaíso",
+        "description": "A quirky, colorful port city known for its steep funiculars and bohemian street art.",
+        "activities": [
+          "Ride the historic wooden elevators (Ascensores).",
+          "Visit 'La Sebastiana', the home of Pablo Neruda.",
+          "Take a street art walking tour.",
+          "Explore the hills of Cerro Alegre and Cerro Concepción.",
+          "Enjoy the nightlife in the port district."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Colombia",
+    "cities": [
+      {
+        "name": "Medellín",
+        "description": "The 'City of Eternal Spring', transformed from a turbulent past into a hub of innovation and culture.",
+        "activities": [
+          "Ride the Metrocable over the city hills.",
+          "See the Botero sculptures in Plaza Botero.",
+          "Explore the vibrant nightlife of El Poblado.",
+          "Take a graffiti tour in Comuna 13.",
+          "Take a day trip to the colorful town of Guatapé."
+        ]
+      },
+      {
+        "name": "Cartagena",
+        "description": "A fairytale city on the Caribbean coast with a walled Old Town and colorful colonial architecture.",
+        "activities": [
+          "Walk atop the ancient city walls at sunset.",
+          "Explore the Castillo de San Felipe de Barajas.",
+          "Take a boat trip to the Rosario Islands.",
+          "Wander the colorful streets of Getsemaní.",
+          "Try 'Arepa de Huevo' from a street vendor."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Malaysia",
+    "cities": [
+      {
+        "name": "Kuala Lumpur",
+        "description": "A skyline dominated by the Petronas Twin Towers, blending Malay, Chinese, and Indian cultures.",
+        "activities": [
+          "Climb the colorful steps of the Batu Caves.",
+          "Walk the skybridge of the Petronas Twin Towers.",
+          "Eat your way through the Jalan Alor street food market.",
+          "Explore the Thean Hou Temple.",
+          "Visit the lush KL Bird Park."
+        ]
+      },
+      {
+        "name": "George Town (Penang)",
+        "description": "A UNESCO World Heritage site famous for its street art, colonial buildings, and status as a food capital.",
+        "activities": [
+          "Hunt for famous street art murals.",
+          "Tour the blue-walled Cheong Fatt Tze Mansion.",
+          "Eat 'Char Kway Teow' at a hawker stall.",
+          "Visit the Kek Lok Si Temple.",
+          "Explore the historic Clan Jetties over the water."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Philippines",
+    "cities": [
+      {
+        "name": "Manila",
+        "description": "A bayside city on the island of Luzon, mixing Spanish colonial landmarks with modern skyscrapers.",
+        "activities": [
+          "Wander the historic walled city of Intramuros.",
+          "Visit the San Agustin Church.",
+          "Take a sunset walk along Manila Bay.",
+          "Explore the Binondo district (the world's oldest Chinatown).",
+          "Shop at the massive SM Mall of Asia."
+        ]
+      },
+      {
+        "name": "Cebu City",
+        "description": "The 'Queen City of the South', known for its historical landmarks and proximity to incredible diving.",
+        "activities": [
+          "Visit the historic Magellan’s Cross.",
+          "Explore the 16th-century Fort San Pedro.",
+          "Take a day trip to swim with whale sharks in Oslob.",
+          "Go canyoneering at Kawasan Falls.",
+          "Hike up to the Temple of Leah."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Croatia",
+    "cities": [
+      {
+        "name": "Dubrovnik",
+        "description": "The 'Pearl of the Adriatic', famous for its massive stone walls encircling an Old Town on the sea.",
+        "activities": [
+          "Walk the entirety of the Old City Walls.",
+          "Take the cable car up Mount Srđ for city views.",
+          "Explore the Rector's Palace.",
+          "Take a boat to the lush Lokrum Island.",
+          "Relax at Banje Beach."
+        ]
+      },
+      {
+        "name": "Split",
+        "description": "Built around the ancient ruins of a Roman Emperor’s palace on the Dalmatian Coast.",
+        "activities": [
+          "Explore the basement and courtyards of Diocletian's Palace.",
+          "Stroll along the Riva Promenade.",
+          "Hike up Marjan Hill for a panoramic view.",
+          "Take a ferry to the island of Hvar.",
+          "Visit the Cathedral of Saint Domnius."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Denmark",
+    "cities": [
+      {
+        "name": "Copenhagen",
+        "description": "A city of canals, bikes, and 'hygge', consistently ranked as one of the world's happiest places.",
+        "activities": [
+          "Visit the historic Tivoli Gardens amusement park.",
+          "Take a photo at the colorful Nyhavn harbor.",
+          "See the Little Mermaid statue.",
+          "Explore the alternative community of Freetown Christiania.",
+          "Rent a bike and ride like a local."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Czech Republic",
+    "cities": [
+      {
+        "name": "Prague",
+        "description": "The 'City of a Hundred Spires', known for its Old Town Square, baroque buildings, and Gothic churches.",
+        "activities": [
+          "Walk across the historic Charles Bridge.",
+          "Watch the Astronomical Clock chime in the square.",
+          "Explore the massive Prague Castle complex.",
+          "Wander through the Jewish Quarter (Josefov).",
+          "Enjoy a famous Czech pilsner at a local cellar."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Hungary",
+    "cities": [
+      {
+        "name": "Budapest",
+        "description": "The 'Queen of the Danube', famous for its thermal baths and the dramatic Parliament building.",
+        "activities": [
+          "Soak in the Széchenyi Thermal Baths.",
+          "Walk across the Chain Bridge at night.",
+          "Explore the Fisherman's Bastion for city views.",
+          "Visit the Hungarian Parliament Building.",
+          "Have a drink in a unique 'Ruin Bar' in the Jewish District."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Belgium",
+    "cities": [
+      {
+        "name": "Brussels",
+        "description": "The capital of the EU, famous for chocolate, beer, waffles, and a quirky sense of humor.",
+        "activities": [
+          "Marvel at the gold-leaf buildings of the Grand Place.",
+          "See the cheeky Manneken Pis statue.",
+          "Visit the futuristic Atomium building.",
+          "Indulge in a chocolate tasting tour.",
+          "Visit the Comic Strip Center."
+        ]
+      },
+      {
+        "name": "Bruges",
+        "description": "A medieval masterpiece of canals and cobbled streets, often called the 'Venice of the North'.",
+        "activities": [
+          "Take a boat tour through the city canals.",
+          "Climb the Belfry of Bruges for a view of the market.",
+          "Visit the Basilica of the Holy Blood.",
+          "Sample local brews at De Halve Maan Brewery.",
+          "Eat warm Belgian waffles in the Burg square."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Jordan",
+    "cities": [
+      {
+        "name": "Amman",
+        "description": "A modern capital with ancient roots, sprawling over several hills with a mix of Roman ruins and lively souks.",
+        "activities": [
+          "Explore the Temple of Hercules at the Amman Citadel.",
+          "Visit the well-preserved 2nd-century Roman Theatre.",
+          "Walk through the vibrant Rainbow Street for cafes and shops.",
+          "Eat traditional falafel and hummus at Hashem Restaurant.",
+          "Visit the Jordan Museum to see the Dead Sea Scrolls."
+        ]
+      },
+      {
+        "name": "Wadi Rum",
+        "description": "A protected desert wilderness in southern Jordan featuring dramatic sandstone mountains and red dunes.",
+        "activities": [
+          "Take a 4x4 jeep safari through the desert.",
+          "Stay overnight in a traditional Bedouin camp.",
+          "Go stargazing under the clear desert sky.",
+          "Ride a camel through the Lawrence of Arabia valley.",
+          "Hike to the Burdah Rock Bridge."
+        ]
+      },
+      {
+        "name": "Petra",
+        "description": "The world-famous archaeological site containing tombs and temples carved into pink sandstone cliffs.",
+        "activities": [
+          "Walk through the narrow 'Siq' to reach the Treasury.",
+          "Hike up the 800 steps to the Monastery (Ad Deir).",
+          "See the Petra by Night candlelit show.",
+          "Explore the Royal Tombs.",
+          "Hike the High Place of Sacrifice trail."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Israel",
+    "cities": [
+      {
+        "name": "Jerusalem",
+        "description": "One of the oldest cities in the world, considered holy to Jews, Christians, and Muslims.",
+        "activities": [
+          "Walk the historic ramparts of the Old City Walls.",
+          "Visit the Western Wall and the Dome of the Rock.",
+          "Walk the Stations of the Cross on the Via Dolorosa.",
+          "Explore the bustling Mahane Yehuda Market.",
+          "Visit the Yad Vashem Holocaust Remembrance Center."
+        ]
+      },
+      {
+        "name": "Tel Aviv",
+        "description": "A high-energy Mediterranean city known for its beaches, nightlife, and Bauhaus architecture.",
+        "activities": [
+          "Relax on the sandy shores of Hilton Beach.",
+          "Walk through the ancient port of Old Jaffa.",
+          "Explore the 'White City' Bauhaus architecture tour.",
+          "Stroll through the Carmel Market for local snacks.",
+          "Cycle along the beachfront Tayelet promenade."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Poland",
+    "cities": [
+      {
+        "name": "Krakow",
+        "description": "A city known for its well-preserved medieval core and Jewish quarter, centered around the Rynek Główny.",
+        "activities": [
+          "Visit the Wawel Royal Castle and Cathedral.",
+          "Explore the historic Jewish district of Kazimierz.",
+          "Walk through the Main Market Square (Rynek Główny).",
+          "Take a day trip to the Auschwitz-Birkenau Memorial.",
+          "Descend into the Wieliczka Salt Mine."
+        ]
+      },
+      {
+        "name": "Warsaw",
+        "description": "The resilient capital of Poland, featuring a meticulously rebuilt Old Town and a thriving modern center.",
+        "activities": [
+          "Explore the UNESCO-listed Warsaw Old Town.",
+          "Visit the interactive Warsaw Rising Museum.",
+          "Walk through the Royal Łazienki Park.",
+          "See the view from the Palace of Culture and Science.",
+          "Enjoy the multimedia fountain park show."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Finland",
+    "cities": [
+      {
+        "name": "Helsinki",
+        "description": "A seaside city known for its functionalist design, vibrant food scene, and archipelago of over 300 islands.",
+        "activities": [
+          "Take a ferry to the Suomenlinna Sea Fortress.",
+          "Visit the unique Temppeliaukio (Rock Church).",
+          "Relax in a traditional wood-fired public sauna.",
+          "Explore the Design District's boutiques and galleries.",
+          "Visit the Helsinki Cathedral at Senate Square."
+        ]
+      },
+      {
+        "name": "Rovaniemi",
+        "description": "The official hometown of Santa Claus in Lapland, located right on the Arctic Circle.",
+        "activities": [
+          "Visit Santa Claus Village and cross the Arctic Circle.",
+          "Go on a husky or reindeer sled safari.",
+          "Hunt for the Northern Lights on a snowmobile tour.",
+          "Visit the Arktikum Science Museum.",
+          "Stay in an ice hotel or glass igloo."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Taiwan",
+    "cities": [
+      {
+        "name": "Taipei",
+        "description": "A bustling metropolis known for its neon-lit night markets, colonial history, and the towering Taipei 101.",
+        "activities": [
+          "Take the elevator to the top of Taipei 101.",
+          "Eat your way through the Shilin Night Market.",
+          "See the imperial treasures at the National Palace Museum.",
+          "Soak in the natural hot springs of Beitou.",
+          "Hike Elephant Mountain for the best city skyline view."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Sweden",
+    "cities": [
+      {
+        "name": "Stockholm",
+        "description": "Built on 14 islands, Sweden's capital is a mix of medieval history and modern Scandinavian style.",
+        "activities": [
+          "Wander through Gamla Stan (the Old Town).",
+          "Visit the Vasa Museum to see the 17th-century ship.",
+          "Explore the ABBA Museum for a pop-culture fix.",
+          "Take a boat tour through the Stockholm Archipelago.",
+          "Visit the Royal Palace and watch the guard change."
+        ]
+      },
+      {
+        "name": "Gothenburg",
+        "description": "A major seaport on the west coast known for its Dutch-style canals and leafy boulevards.",
+        "activities": [
+          "Spend a day at the Liseberg Amusement Park.",
+          "Explore the Haga district for traditional 'Fika'.",
+          "Visit the Universeum science center.",
+          "Take a boat trip to the Southern Archipelago islands.",
+          "See the botanical gardens (Botaniska Trädgården)."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "cities": [
+      {
+        "name": "San José",
+        "description": "The nation's capital, surrounded by mountains and serving as a hub for eco-tourism adventures.",
+        "activities": [
+          "Visit the ornate National Theatre of Costa Rica.",
+          "Explore the Pre-Columbian Gold Museum.",
+          "Walk through the bustling Central Market.",
+          "Take a day trip to the Poás Volcano.",
+          "Visit a nearby coffee plantation for a tasting tour."
+        ]
+      },
+      {
+        "name": "La Fortuna",
+        "description": "The gateway to the Arenal Volcano National Park, famous for its hot springs and outdoor sports.",
+        "activities": [
+          "Hike the base of the Arenal Volcano.",
+          "Soak in the Tabacón Hot Springs.",
+          "Swim at the base of the La Fortuna Waterfall.",
+          "Go ziplining through the rainforest canopy.",
+          "Take a wildlife boat tour on the Caño Negro."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Malta",
+    "cities": [
+      {
+        "name": "Valletta",
+        "description": "A fortress city built by the Knights of St. John, known for its Baroque architecture and harbor views.",
+        "activities": [
+          "Visit the dazzling St. John's Co-Cathedral.",
+          "Watch the gun salute at the Upper Barrakka Gardens.",
+          "Explore the Grand Harbour by boat.",
+          "Visit the National Museum of Archaeology.",
+          "Walk the historic waterfront at night."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Kenya",
+    "cities": [
+      {
+        "name": "Nairobi",
+        "description": "The only city in the world with a national park within its borders, a hub for East African wildlife.",
+        "activities": [
+          "Go on a safari in Nairobi National Park.",
+          "Visit the David Sheldrick Wildlife Trust (elephant orphanage).",
+          "Feed giraffes at the Giraffe Centre.",
+          "Tour the Karen Blixen Museum.",
+          "Shop for beadwork at the Maasai Market."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Peru",
+    "cities": [
+      {
+        "name": "Arequipa",
+        "description": "The 'White City', built from volcanic stone and framed by three spectacular volcanoes.",
+        "activities": [
+          "Visit the stunning Santa Catalina Monastery.",
+          "Explore the historic Plaza de Armas.",
+          "Take a day trip to the deep Colca Canyon.",
+          "See the ice mummy 'Juanita' at the Museo Santuarios Andinos.",
+          "Eat spicy local food at a traditional 'Picantería'."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Nepal",
+    "cities": [
+      {
+        "name": "Kathmandu",
+        "description": "A high-altitude capital city famous for its ancient temples, bustling markets, and spiritual atmosphere.",
+        "activities": [
+          "Visit the sacred Boudhanath Stupa.",
+          "Explore the ancient temples of Durbar Square.",
+          "Climb the stairs to Swayambhunath (Monkey Temple).",
+          "Wander the narrow streets of Thamel.",
+          "Take a scenic flight to see Mount Everest."
+        ]
+      },
+      {
+        "name": "Pokhara",
+        "description": "A tranquil lakeside city that serves as the gateway to the Annapurna mountain range.",
+        "activities": [
+          "Take a boat ride on Phewa Lake.",
+          "Hike up to the World Peace Pagoda.",
+          "Go paragliding over the valley.",
+          "Visit the International Mountain Museum.",
+          "Explore the limestone caves of Mahendra Gufa."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Cuba",
+    "cities": [
+      {
+        "name": "Havana",
+        "description": "A time-capsule city known for its Spanish colonial architecture, vintage cars, and lively salsa music.",
+        "activities": [
+          "Walk through the historic Old Havana (Habana Vieja).",
+          "Ride in a 1950s classic American convertible.",
+          "Stroll along the Malecón seawall at sunset.",
+          "Visit the Museo Nacional de Bellas Artes.",
+          "Enjoy live jazz at a local 'Paladar'."
+        ]
+      },
+      {
+        "name": "Trinidad",
+        "description": "A perfectly preserved Spanish colonial town with cobblestone streets and pastel-colored houses.",
+        "activities": [
+          "Explore the Plaza Mayor and its museums.",
+          "Hike to the waterfalls in Topes de Collantes.",
+          "Relax at the nearby Playa Ancón.",
+          "Dance to live music at the Casa de la Música steps.",
+          "Visit the historic Valle de los Ingenios."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Romania",
+    "cities": [
+      {
+        "name": "Bucharest",
+        "description": "The 'Paris of the East', known for its wide boulevards and the massive Palace of the Parliament.",
+        "activities": [
+          "Tour the gigantic Palace of the Parliament.",
+          "Wander the charming streets of the Old Town (Lipscani).",
+          "Visit the Village Museum (Muzeul Satului).",
+          "Relax at the Therme Bucharest spa.",
+          "Explore the leafy King Michael I Park."
+        ]
+      },
+      {
+        "name": "Brașov",
+        "description": "A medieval city in the heart of Transylvania, surrounded by the Carpathian Mountains.",
+        "activities": [
+          "Visit the Gothic Black Church (Biserica Neagră).",
+          "Take a day trip to Bran Castle (Dracula's Castle).",
+          "Walk the narrow Rope Street (Strada Sforii).",
+          "Take the cable car up Tâmpa Mountain.",
+          "Explore the nearby Peleș Castle in Sinaia."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Georgia",
+    "cities": [
+      {
+        "name": "Tbilisi",
+        "description": "A city with a dramatic setting, famous for its sulfur baths, diverse architecture, and wine culture.",
+        "activities": [
+          "Soak in the ancient Abanotubani sulfur baths.",
+          "Ride the cable car to Narikala Fortress.",
+          "Explore the colorful balconies of the Old Town.",
+          "Walk across the futuristic Bridge of Peace.",
+          "Go wine tasting in a local cellar."
+        ]
+      },
+      {
+        "name": "Batumi",
+        "description": "A modern resort city on the Black Sea coast with a unique, futuristic skyline.",
+        "activities": [
+          "Walk the 7-kilometer Batumi Boulevard.",
+          "See the moving Ali and Nino statue.",
+          "Visit the Batumi Botanical Garden.",
+          "Take the Argo Cable Car for panoramic views.",
+          "Explore the European Square."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Cambodia",
+    "cities": [
+      {
+        "name": "Siem Reap",
+        "description": "The gateway to the ruins of Angkor, the seat of the Khmer Kingdom from the 9th–15th centuries.",
+        "activities": [
+          "Watch the sunrise at Angkor Wat.",
+          "Explore the jungle-covered Ta Prohm temple.",
+          "Visit the giant stone faces of Bayon Temple.",
+          "Eat and shop at the Angkor Night Market.",
+          "Take a boat tour of the Tonlé Sap floating villages."
+        ]
+      },
+      {
+        "name": "Phnom Penh",
+        "description": "The busy capital located at the confluence of the Mekong and Tonlé Sap rivers.",
+        "activities": [
+          "Visit the Royal Palace and Silver Pagoda.",
+          "Learn history at the Tuol Sleng Genocide Museum.",
+          "Shop for souvenirs at the Art Deco Central Market.",
+          "Stroll along the riverside promenade.",
+          "Visit the Choeung Ek Killing Fields memorial."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Ecuador",
+    "cities": [
+      {
+        "name": "Quito",
+        "description": "One of the highest capitals in the world, built on the foundations of an ancient Inca city.",
+        "activities": [
+          "Explore the historic center (Old Town).",
+          "Stand on the equator at Mitad del Mundo.",
+          "Take the TelefériQo up Pichincha Volcano.",
+          "Visit the ornate Church of the Society of Jesus.",
+          "Wander through the craft market at Otavalo (day trip)."
+        ]
+      },
+      {
+        "name": "Cuenca",
+        "description": "A UNESCO World Heritage city known for its stunning colonial architecture and river views.",
+        "activities": [
+          "Visit the New Cathedral with its blue domes.",
+          "Watch the weaving of traditional Panama Hats.",
+          "Stroll along the Tomebamba River.",
+          "Hike in the nearby Cajas National Park.",
+          "Explore the Flower Market."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Sri Lanka",
+    "cities": [
+      {
+        "name": "Colombo",
+        "description": "A vibrant port city that blends colonial architecture with modern skyscrapers and markets.",
+        "activities": [
+          "Visit the Gangaramaya Temple.",
+          "Walk along Galle Face Green at sunset.",
+          "Explore the Pettah Floating Market.",
+          "Tour the National Museum of Colombo.",
+          "Eat fresh seafood at Mount Lavinia beach."
+        ]
+      },
+      {
+        "name": "Kandy",
+        "description": "The hill capital of Sri Lanka, home to sacred Buddhist sites and lush tea plantations.",
+        "activities": [
+          "Visit the Temple of the Sacred Tooth Relic.",
+          "Walk around the scenic Kandy Lake.",
+          "Explore the Royal Botanical Gardens.",
+          "Watch a traditional Kandyan dance performance.",
+          "Take the scenic train to Ella through tea hills."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Hungary",
+    "cities": [
+      {
+        "name": "Debrecen",
+        "description": "The cultural and religious hub of eastern Hungary, known as the 'Calvinist Rome'.",
+        "activities": [
+          "Visit the Great Reformed Church.",
+          "Relax in the Aquaticum Mediterranean Pleasure Baths.",
+          "Explore the Déri Museum’s art collections.",
+          "Walk through the Great Forest Park (Nagyerdő).",
+          "Take a day trip to the Hortobágy National Park."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Slovenia",
+    "cities": [
+      {
+        "name": "Ljubljana",
+        "description": "A green, walkable capital known for its dragon bridges and vibrant outdoor cafe culture.",
+        "activities": [
+          "Walk across the Dragon Bridge.",
+          "Take the funicular up to Ljubljana Castle.",
+          "Stroll through Tivoli Park.",
+          "Take a boat ride on the Ljubljanica River.",
+          "Explore the alternative Metelkova Art Center."
+        ]
+      },
+      {
+        "name": "Bled",
+        "description": "A fairytale town world-famous for its emerald-green lake and church-topped island.",
+        "activities": [
+          "Take a Pletna boat to the island church.",
+          "Hike up to Bled Castle for the best view.",
+          "Eat a slice of traditional Bled Cream Cake.",
+          "Walk the 6km path around the lake.",
+          "Explore the nearby Vintgar Gorge."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Tanzania",
+    "cities": [
+      {
+        "name": "Zanzibar City",
+        "description": "An archipelago off the coast of East Africa, home to the historic Stone Town and white-sand beaches.",
+        "activities": [
+          "Get lost in the alleys of Stone Town.",
+          "Take a spice farm tour.",
+          "Visit the old Slave Market memorial.",
+          "Snorkel in the crystal-clear waters of Mnemba Atoll.",
+          "Eat at the Forodhani Gardens night market."
+        ]
+      },
+      {
+        "name": "Arusha",
+        "description": "The gateway to Tanzania's northern safari circuit and Mount Kilimanjaro.",
+        "activities": [
+          "Go on a safari in Arusha National Park.",
+          "Visit a local Maasai village.",
+          "Explore the Cultural Heritage Centre.",
+          "Take a coffee plantation tour.",
+          "Prepare for a climb of Mt. Kilimanjaro."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Estonia",
+    "cities": [
+      {
+        "name": "Tallinn",
+        "description": "One of Europe’s best-preserved medieval cities, featuring a fairytale Old Town and a high-tech modern core.",
+        "activities": [
+          "Wander through the UNESCO-listed Old Town.",
+          "Visit the Alexander Nevsky Cathedral.",
+          "Explore the trendy Telliskivi Creative City.",
+          "See the views from Toompea Hill.",
+          "Visit the Seaplane Harbour maritime museum."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Latvia",
+    "cities": [
+      {
+        "name": "Riga",
+        "description": "Known for its wooden buildings, art nouveau architecture, and medieval Old Town.",
+        "activities": [
+          "Walk through the Art Nouveau district.",
+          "Visit the Riga Central Market in former zeppelin hangars.",
+          "Explore the House of the Blackheads.",
+          "See the view from St. Peter's Church tower.",
+          "Relax at the nearby Jurmala beach resort."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Lithuania",
+    "cities": [
+      {
+        "name": "Vilnius",
+        "description": "A city known for its Baroque architecture and the self-proclaimed 'republic' of Uzupis.",
+        "activities": [
+          "Explore the bohemian district of Užupis.",
+          "Visit the Vilnius Cathedral and Bell Tower.",
+          "Climb Gediminas' Tower for sunset.",
+          "Take a day trip to the island castle of Trakai.",
+          "Walk through the historic Jewish Quarter."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Bulgaria",
+    "cities": [
+      {
+        "name": "Sofia",
+        "description": "A city that reflects 2,000 years of history, including Greek, Roman, Ottoman, and Soviet occupation.",
+        "activities": [
+          "Marvel at the Alexander Nevsky Cathedral.",
+          "See the Roman ruins at the Serdica ancient complex.",
+          "Hike Vitosha Mountain overlooking the city.",
+          "Visit the Boyana Church frescoes.",
+          "Walk the pedestrian Vitosha Boulevard."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Uruguay",
+    "cities": [
+      {
+        "name": "Montevideo",
+        "description": "A relaxed coastal capital known for its art deco buildings and the long Rambla waterfront.",
+        "activities": [
+          "Walk the historic Ciudad Vieja (Old Town).",
+          "Eat steak at the Mercado del Puerto.",
+          "Stroll or bike along the 22km Rambla.",
+          "Visit the Palacio Salvo.",
+          "Watch a Candombe drum performance."
+        ]
+      },
+      {
+        "name": "Colonia del Sacramento",
+        "description": "A picturesque colonial town famous for its cobblestone streets and Portuguese history.",
+        "activities": [
+          "Walk the historic Barrio Histórico.",
+          "Climb the 19th-century lighthouse (El Faro).",
+          "Watch the sunset over the Río de la Plata.",
+          "Explore the ruins of the Convent of San Francisco.",
+          "Rent a golf cart to explore the coastline."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "cities": [
+      {
+        "name": "Addis Ababa",
+        "description": "The diplomatic capital of Africa, a bustling highland city rich in culture and history.",
+        "activities": [
+          "Visit 'Lucy' at the National Museum of Ethiopia.",
+          "Explore the massive Merkato open-air market.",
+          "Drink traditional Ethiopian coffee at Tomoca.",
+          "See the Holy Trinity Cathedral.",
+          "Enjoy a traditional dinner with cultural dancing."
+        ]
+      },
+      {
+        "name": "Lalibela",
+        "description": "A town in the mountains famous for its 12th-century rock-hewn monolithic churches.",
+        "activities": [
+          "Tour the Church of Saint George (Biete Ghiorgis).",
+          "Attend a white-robed morning prayer service.",
+          "Explore the interconnected tunnels between churches.",
+          "Hike to the Asheton Maryam Monastery.",
+          "Visit the local community market."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Laos",
+    "cities": [
+      {
+        "name": "Luang Prabang",
+        "description": "A UNESCO World Heritage town known for its mix of traditional Lao and French colonial architecture.",
+        "activities": [
+          "Watch the daily Alms Giving Ceremony (Tak Bat).",
+          "Swim in the turquoise Kuang Si Falls.",
+          "Climb Mount Phousi for a panoramic sunset.",
+          "Visit the ornate Wat Xieng Thong temple.",
+          "Explore the Night Market for local textiles."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Guatemala",
+    "cities": [
+      {
+        "name": "Antigua",
+        "description": "A stunning colonial city surrounded by volcanoes, famous for its Spanish architecture and ruins.",
+        "activities": [
+          "Walk under the iconic Santa Catalina Arch.",
+          "Hike the active Pacaya Volcano.",
+          "Tour a local cacao and chocolate museum.",
+          "Explore the ruins of the Convento de las Capuchinas.",
+          "Take a coffee farm tour in the valley."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Serbia",
+    "cities": [
+      {
+        "name": "Belgrade",
+        "description": "The 'White City', famous for its gritty charm, fortress, and world-class nightlife on river barges.",
+        "activities": [
+          "Explore the Kalemegdan Fortress and park.",
+          "Walk the bohemian street of Skadarlija.",
+          "Visit the Nikola Tesla Museum.",
+          "See the massive Temple of Saint Sava.",
+          "Party on the 'Splavovi' (floating river clubs)."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Montenegro",
+    "cities": [
+      {
+        "name": "Kotor",
+        "description": "A fortified town on the Adriatic coast, nestled in a dramatic bay reminiscent of a fjord.",
+        "activities": [
+          "Climb the 1,350 steps to the Castle of San Giovanni.",
+          "Explore the medieval Old Town maze.",
+          "Take a boat to Our Lady of the Rocks.",
+          "Visit the St. Tryphon Cathedral.",
+          "Enjoy fresh mussels at a bayside konoba."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Panama",
+    "cities": [
+      {
+        "name": "Panama City",
+        "description": "A modern metropolis where skyscrapers meet colonial history and the world-famous canal.",
+        "activities": [
+          "Watch ships cross the Miraflores Locks (Panama Canal).",
+          "Wander through the historic Casco Viejo.",
+          "Bike the Amador Causeway.",
+          "Explore the ruins of Panamá Viejo.",
+          "Hike in the Metropolitan Natural Park."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Bolivia",
+    "cities": [
+      {
+        "name": "La Paz",
+        "description": "The world's highest administrative capital, situated in a bowl-shaped valley surrounded by the Andes.",
+        "activities": [
+          "Ride the Mi Teleférico cable car system.",
+          "Shop for oddities at the Witches' Market.",
+          "Take a day trip to the Moon Valley (Valle de la Luna).",
+          "Explore the Plaza Murillo.",
+          "Watch a 'Cholita Wrestling' match."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Cyprus",
+    "cities": [
+      {
+        "name": "Paphos",
+        "description": "A coastal city rich in archaeology and Greek mythology, the legendary birthplace of Aphrodite.",
+        "activities": [
+          "Explore the Tombs of the Kings.",
+          "See the mosaics at the Paphos Archaeological Park.",
+          "Visit Aphrodite’s Rock (Petra tou Romiou).",
+          "Walk along the Paphos Harbour and Castle.",
+          "Swim at the Blue Lagoon in Akamas."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Luxembourg",
+    "cities": [
+      {
+        "name": "Luxembourg City",
+        "description": "A city of dramatic contrasts, built over deep gorges and home to several EU institutions.",
+        "activities": [
+          "Walk the Bock Casemates (underground tunnels).",
+          "Stroll along the Chemin de la Corniche (Europe's most beautiful balcony).",
+          "Explore the Grund district in the valley.",
+          "Visit the Palais Grand-Ducal.",
+          "See the modern Mudam art museum."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Kazakhstan",
+    "cities": [
+      {
+        "name": "Almaty",
+        "description": "Kazakhstan's largest metropolis, set in the foothills of the Trans-Ili Alatau mountains.",
+        "activities": [
+          "Take the cable car to Kok Tobe hill.",
+          "Visit the colorful Zenkov (Ascension) Cathedral.",
+          "Go skating or hiking at Medeu High-Mountain Rink.",
+          "Shop at the Green Bazaar (Zelyony Bazar).",
+          "Take a day trip to Big Almaty Lake."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Albania",
+    "cities": [
+      {
+        "name": "Tirana",
+        "description": "A colorful, energetic capital that has transformed from a closed communist hub to a vibrant Balkan city.",
+        "activities": [
+          "Explore the massive Skanderbeg Square.",
+          "Visit Bunk'Art 1 or 2 (museums in former bunkers).",
+          "Ride the Dajti Ekspres cable car.",
+          "See the colorful buildings in the Blloku district.",
+          "Visit the Et'hem Bey Mosque."
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Oman",
+    "cities": [
+      {
+        "name": "Muscat",
+        "description": "A port city between mountains and the sea, known for its low-rise white architecture and pristine coastline.",
+        "activities": [
+          "Marvel at the Sultan Qaboos Grand Mosque.",
+          "Walk the Mutrah Corniche at sunset.",
+          "Get lost in the Mutrah Souq.",
+          "Visit the Royal Opera House Muscat.",
+          "Take a boat trip to spot dolphins."
+        ]
+      }
+    ]
+  }
+]

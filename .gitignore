@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# Databases
+*.db
+*.sqlite
+
+# Docker
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
