@@ -90,3 +90,8 @@ docker compose up --build
 
 Press:
 CTRL + C
+
+## Rebuilding Database
+
+If the database get corrupted run: python setup_database.py
+This will overwrite the database file 
