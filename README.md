@@ -85,6 +85,7 @@ http://localhost:8000
 After making code changes, rebuild the container:
 
 docker compose down
+
 docker compose up --build
 
 ## Stopping the App
