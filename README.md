@@ -38,6 +38,7 @@ docker compose version
 ## Step 2 — Clone the project
 
 git clone https://github.com/yourusername/ai-travel-planner.git
+
 cd ai-travel-planner
 
 ## Step 3 — Create your API key file
