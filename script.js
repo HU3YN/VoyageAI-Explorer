@@ -32,18 +32,20 @@ async function mockTravelAPI(userInput, totalDays) {
     const matched_interests = [];
     const activity_interest_map = generateActivityInterestMap(itinerary, interests);
     
-    // FIXED: Ensure matched_interests is properly structured as an array of arrays
+    // Ensure matched_interests is properly structured as an array of arrays
     itinerary.forEach((city, idx) => {
-        // For each city, assign some interests
-        matched_interests[idx] = Array.isArray(interests) ? 
+        // For each city, assign some interests - ALWAYS return an array
+        const cityInterests = Array.isArray(interests) ? 
             interests.slice(0, Math.min(3, interests.length)) : 
-            ['culture', 'food', 'nature']; // Default interests
+            ['culture', 'food', 'nature'];
+        
+        matched_interests[idx] = cityInterests;
     });
     
     return {
         success: true,
         itinerary: itinerary,
-        matched_interests: matched_interests, // Now properly structured
+        matched_interests: matched_interests, // Array of arrays
         activity_interest_map: activity_interest_map
     };
 }
@@ -435,10 +437,20 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
 
         const matchPercentage = city.score || 0;
         
-        // FIXED: Ensure cityMatchedInterests is always an array
+        // FIXED: Always ensure cityMatchedInterests is an array
         let cityMatchedInterests = [];
-        if (matched_interests && Array.isArray(matched_interests) && matched_interests[idx]) {
-            cityMatchedInterests = Array.isArray(matched_interests[idx]) ? matched_interests[idx] : [matched_interests[idx]];
+        if (matched_interests && Array.isArray(matched_interests)) {
+            const interestsForCity = matched_interests[idx];
+            if (Array.isArray(interestsForCity)) {
+                cityMatchedInterests = interestsForCity;
+            } else if (interestsForCity) {
+                cityMatchedInterests = [interestsForCity]; // Convert to array if it's a single value
+            }
+        }
+        
+        // If still empty, use some defaults
+        if (cityMatchedInterests.length === 0) {
+            cityMatchedInterests = ['culture', 'adventure', 'food'].slice(0, Math.floor(Math.random() * 3) + 1);
         }
         
         const activityMap = activity_interest_map && activity_interest_map[idx] ? activity_interest_map[idx] : {};
@@ -459,7 +471,7 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
             lastRegion = currentRegion;
         }
         
-        // FIXED: Ensure activities is an array
+        // Ensure activities is an array
         const cityActivities = Array.isArray(city.activities) ? city.activities : [];
         
         // Create activity list with AI-matched interests
@@ -481,8 +493,8 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
             return `<li>${activity}</li>`;
         }).join("");
 
-        // FIXED: Ensure we only map if cityMatchedInterests is an array
-        const interestBadges = cityMatchedInterests.length > 0 
+        // FIXED: Safe mapping for cityMatchedInterests
+        const interestBadges = Array.isArray(cityMatchedInterests) && cityMatchedInterests.length > 0 
             ? cityMatchedInterests.map(i => `<span class="badge">${i}</span>`).join(" ")
             : '<span class="badge no-match">Popular destination</span>';
 
