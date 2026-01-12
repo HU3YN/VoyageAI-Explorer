@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Planner - Your Perfect Trip Awaits</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="description" content="Plan your perfect trip with AI-powered travel recommendations">
+</head>
+<body>
+    <!-- Floating particles effect -->
+    <div id="particles"></div>
+
+    <div class="container">
+        <div class="header">
+        <h1>VoyageAI Explorer</h1>
+        <p class="subtitle">Your Personal AI Travel Curator ✨</p>
+        <div class="icon-row">
+            <span>✈️</span>
+            <span>🌍</span>
+            <span>🗺️</span>
+            <span>🎒</span>
+        </div>
+    </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="userInput">What are your travel interests?</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="e.g., sushi, hiking, beaches, culture, nightlife..."
+                        autocomplete="off"
+                    >
+                    <span class="input-icon">💭</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="daysInput">How many days?</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="number" 
+                        id="daysInput" 
+                        value="3" 
+                        min="1" 
+                        max="30"
+                    >
+                    <span class="input-icon">📅</span>
+                </div>
+            </div>
+
+            <button id="planTripButton">
+                <span>🚀 Plan My Adventure</span>
+            </button>
+        </div>
+
+        <div id="results" class="results-section">
+            <!-- Trip results will appear here -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script>
+        // Create floating particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            particle.style.animationDelay = Math.random() * 2 + 's';
+            
+            // Add floating animation
+            particle.style.animation = `float ${Math.random() * 3 + 3}s ease-in-out infinite`;
+            
+            particlesContainer.appendChild(particle);
+        }
+
+        // Add floating keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(0) translateX(0);
+                }
+                25% {
+                    transform: translateY(-20px) translateX(10px);
+                }
+                50% {
+                    transform: translateY(-10px) translateX(-10px);
+                }
+                75% {
+                    transform: translateY(-30px) translateX(5px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.body;
+    
+    // Create floating islands
+    for (let i = 0; i < 3; i++) {
+        const island = document.createElement('div');
+        island.className = 'floating-island';
+        body.appendChild(island);
+    }
+    
+    // Create enhanced particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 25; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.width = Math.random() * 10 + 5 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.opacity = Math.random() * 0.3 + 0.1;
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        particlesContainer.appendChild(particle);
+    }
+});
+</script>
+</body>
+</html>
