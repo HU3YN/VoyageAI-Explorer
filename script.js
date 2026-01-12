@@ -716,7 +716,7 @@ function addDemoResultsNotice() {
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
                 ">docker --version
-docker compose version</pre>
+                docker compose version</pre>
             </div>
             
 
@@ -764,7 +764,7 @@ docker compose version</pre>
                     border: 1px solid rgba(255, 255, 255, 0.1);
                 ">git clone https://github.com/HU3YN/VoyageAI-Explorer.git
 
-            cd VoyageAI-Explorer</pre>
+                cd VoyageAI-Explorer</pre>
                 <p style="color: #a8b1d1; margin-top: 15px; line-height: 1.6; font-size: 0.95rem;">
                     This folder is in your <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; color: #a8b1d1;">C:\\Users\\your_profile_name</code>
                 </p>
@@ -1016,6 +1016,7 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
 
 
 
