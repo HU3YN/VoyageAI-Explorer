@@ -521,7 +521,7 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
                 </div>
                 
                 <h3 class="destination-name">
-                    ${city.destination || 'Unnamed Destination'}, ${city.country || 'Unknown Country'}
+                    ${city.destination || 'Unnamed Destination'}
                 </h3>
                 
                 <p class="description">${city.description || 'No description available.'}</p>
@@ -1041,4 +1041,5 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
 
