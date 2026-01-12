@@ -632,6 +632,49 @@ function addDemoResultsNotice() {
                     Here are the setup and run instructions:
                 </p>
             </div>
+
+            <div style="
+                background: rgba(255, 165, 0, 0.15);
+                border: 2px solid rgba(255, 165, 0, 0.3);
+                color: #FFE082;
+                padding: 18px 25px;
+                border-radius: 12px;
+                margin: 0 0 30px 0;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                box-shadow: 0 8px 25px rgba(255, 165, 0, 0.2);
+                position: relative;
+                overflow: hidden;
+                animation: pulseGlow 3s ease-in-out infinite;
+            ">
+                <div style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 4px;
+                    background: linear-gradient(90deg, #FF6B35, #FFA500, #FFC107);
+                    background-size: 200% 100%;
+                    animation: gradientFlow 3s linear infinite;
+                "></div>
+                <span style="font-size: 1.4rem;">⚡</span>
+                <div style="flex: 1;">
+                    <div style="font-weight: 700; font-size: 1.1rem; color: #FFD54F; margin-bottom: 5px;">
+                        Important Command Note
+                    </div>
+                    <div>
+                        <strong>Note:</strong> All commands in these instructions are meant to be ran in <strong style="color: #FFD54F;">Powershell</strong> (Windows) or <strong style="color: #FFD54F;">Terminal</strong> (Mac/Linux).
+                    </div>
+                </div>
+                <style>
+                    @keyframes pulseGlow {
+                        0%, 100% { box-shadow: 0 8px 25px rgba(255, 165, 0, 0.2); }
+                        50% { box-shadow: 0 8px 30px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.1); }
+                    }
+                </style>
+            </div>
             
             <!-- Step 1 -->
             <div class="setup-step" style="
@@ -1016,6 +1059,7 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
 
 
 
