@@ -10,57 +10,30 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-      
       - name: Prepare deployment
         run: |
-          # Create deployment directory
-          mkdir -p ./_site
-          
-          # Copy static files
-          cp -r static/* ./_site/ 2>/dev/null || echo "No static directory found"
-          
-          # If no static dir, use root files
-          if [ ! -d "static" ]; then
-            cp -r ./* ./_site/ 2>/dev/null || true
-          fi
-          
-          # Ensure index.html exists
-          if [ ! -f "./_site/index.html" ]; then
-            echo "Error: index.html not found in deployment files!"
-            exit 1
-          fi
-          
-          echo "📁 Files ready for deployment:"
-          ls -la ./_site/
+          # Keep your original structure
+          # GitHub Pages will serve everything as-is
+          echo "📁 Current structure:"
+          ls -la
+          echo "📁 Static folder:"
+          ls -la static/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: .
       
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
