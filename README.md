@@ -18,6 +18,8 @@ You do NOT need Python, pip, or virtual environments.
 
 ---
 
+Note: All commands are meant to be ran in Powershell
+
 ## Setup & Run Instructions
 
 ### Step 1 — Install Docker
@@ -26,9 +28,9 @@ Download and install Docker Desktop:
 
 https://www.docker.com/products/docker-desktop/
 
-After installing, open Docker Desktop and wait until it says:
+After installing, restart and open Docker Desktop and wait until it says:
 
-Docker is running
+Engine running in the bottom left
 
 Verify installation:
 
@@ -41,9 +43,11 @@ git clone https://github.com/HU3YN/VoyageAI-Explorer.git
 
 cd VoyageAI-Explorer
 
+This folder is in your C:\Users\your_profile_name
+
 ## Step 3 — Create your API key file
 
-This project uses a .env file to store secrets.
+This project uses a .env file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities just keyword searching
 
 Copy the example file:
 
@@ -61,6 +65,7 @@ Do NOT upload this file to GitHub.
 
 docker compose up --build
 
+This will take about 10-15 minutes to build
 
 Docker will:
 
