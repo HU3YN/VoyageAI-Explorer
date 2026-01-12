@@ -29,13 +29,21 @@ async function mockTravelAPI(userInput, totalDays) {
     
     // Generate mock itinerary
     const itinerary = generateMockItinerary(userInput, totalDays);
-    const matched_interests = interests;
+    const matched_interests = [];
     const activity_interest_map = generateActivityInterestMap(itinerary, interests);
+    
+    // FIXED: Ensure matched_interests is properly structured as an array of arrays
+    itinerary.forEach((city, idx) => {
+        // For each city, assign some interests
+        matched_interests[idx] = Array.isArray(interests) ? 
+            interests.slice(0, Math.min(3, interests.length)) : 
+            ['culture', 'food', 'nature']; // Default interests
+    });
     
     return {
         success: true,
         itinerary: itinerary,
-        matched_interests: matched_interests,
+        matched_interests: matched_interests, // Now properly structured
         activity_interest_map: activity_interest_map
     };
 }
@@ -196,15 +204,19 @@ function generateActivityInterestMap(itinerary, interests) {
     const map = {};
     itinerary.forEach((day, index) => {
         const dayMap = {};
-        day.activities.forEach((activity, activityIndex) => {
-            // Assign 1-2 interests to each activity
-            const numInterests = 1 + (activityIndex % 2);
-            const assignedInterests = [];
-            for (let i = 0; i < numInterests && i < interests.length; i++) {
-                assignedInterests.push(interests[(activityIndex + i) % interests.length]);
-            }
-            dayMap[activity] = [...new Set(assignedInterests)]; // Remove duplicates
-        });
+        if (Array.isArray(day.activities)) {
+            day.activities.forEach((activity, activityIndex) => {
+                if (activity) {
+                    // Assign 1-2 interests to each activity
+                    const numInterests = 1 + (activityIndex % 2);
+                    const assignedInterests = [];
+                    for (let i = 0; i < numInterests && i < interests.length; i++) {
+                        assignedInterests.push(interests[(activityIndex + i) % interests.length]);
+                    }
+                    dayMap[activity] = [...new Set(assignedInterests)]; // Remove duplicates
+                }
+            });
+        }
         map[index] = dayMap;
     });
     return map;
@@ -289,7 +301,7 @@ document.getElementById("planTripButton").addEventListener("click", async () => 
             // Process mock result like real API response
             const itinerary = mockResult.itinerary || [];
             const matched_interests = mockResult.matched_interests || [];
-            const activity_interest_map = mockResult.activity_interest_map || [];
+            const activity_interest_map = mockResult.activity_interest_map || {};
 
             resultsDiv.innerHTML = "";
 
@@ -326,7 +338,7 @@ document.getElementById("planTripButton").addEventListener("click", async () => 
 
         const itinerary = data.itinerary || [];
         const matched_interests = data.matched_interests || [];
-        const activity_interest_map = data.activity_interest_map || [];
+        const activity_interest_map = data.activity_interest_map || {};
 
         resultsDiv.innerHTML = "";
 
@@ -403,13 +415,13 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
                     <div class="stat-label">${numCities === 1 ? 'City' : 'Cities'}</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">${itinerary.reduce((sum, city) => sum + (city.activities?.length || 0), 0)}</div>
+                    <div class="stat-value">${itinerary.reduce((sum, city) => sum + (Array.isArray(city.activities) ? city.activities.length : 0), 0)}</div>
                     <div class="stat-label">Activities</div>
                 </div>
             </div>
         </div>
     `;
-    resultsDiv.innerHTML += summaryHTML;
+    resultsDiv.innerHTML = summaryHTML;
 
     // Display timeline with region headers
     let currentDay = 1;
@@ -422,8 +434,14 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
         currentDay = endDay + 1;
 
         const matchPercentage = city.score || 0;
-        const cityMatchedInterests = matched_interests[idx] || [];
-        const activityMap = activity_interest_map[idx] || {};
+        
+        // FIXED: Ensure cityMatchedInterests is always an array
+        let cityMatchedInterests = [];
+        if (matched_interests && Array.isArray(matched_interests) && matched_interests[idx]) {
+            cityMatchedInterests = Array.isArray(matched_interests[idx]) ? matched_interests[idx] : [matched_interests[idx]];
+        }
+        
+        const activityMap = activity_interest_map && activity_interest_map[idx] ? activity_interest_map[idx] : {};
 
         const matchColor = getMatchColor(matchPercentage);
         
@@ -441,11 +459,18 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
             lastRegion = currentRegion;
         }
         
+        // FIXED: Ensure activities is an array
+        const cityActivities = Array.isArray(city.activities) ? city.activities : [];
+        
         // Create activity list with AI-matched interests
-        const activitiesHTML = (city.activities || []).map(activity => {
+        const activitiesHTML = cityActivities.map((activity, activityIdx) => {
+            if (!activity) return '';
+            
             const matchedForActivity = activityMap[activity] || [];
-            if (matchedForActivity.length > 0) {
-                const badges = matchedForActivity.map(interest => 
+            const matchedForActivityArray = Array.isArray(matchedForActivity) ? matchedForActivity : [];
+            
+            if (matchedForActivityArray.length > 0) {
+                const badges = matchedForActivityArray.map(interest => 
                     `<span class="activity-badge">${interest}</span>`
                 ).join(" ");
                 return `<li class="matched-activity">
@@ -456,6 +481,7 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
             return `<li>${activity}</li>`;
         }).join("");
 
+        // FIXED: Ensure we only map if cityMatchedInterests is an array
         const interestBadges = cityMatchedInterests.length > 0 
             ? cityMatchedInterests.map(i => `<span class="badge">${i}</span>`).join(" ")
             : '<span class="badge no-match">Popular destination</span>';
@@ -483,20 +509,22 @@ function displayResults(itinerary, matched_interests, activity_interest_map, tot
                 </div>
                 
                 <h3 class="destination-name">
-                    ${city.destination}, ${city.country}
+                    ${city.destination || 'Unnamed Destination'}, ${city.country || 'Unknown Country'}
                 </h3>
                 
-                <p class="description">${city.description}</p>
+                <p class="description">${city.description || 'No description available.'}</p>
                 
                 <div class="interests-section">
                     <strong>Why this destination:</strong>
                     <div class="interest-badges">${interestBadges}</div>
                 </div>
                 
+                ${cityActivities.length > 0 ? `
                 <div class="activities-section">
-                    <strong>Things to do (${city.activities?.length || 0} activities):</strong>
+                    <strong>Things to do (${cityActivities.length} activities):</strong>
                     <ul class="activities-list">${activitiesHTML}</ul>
                 </div>
+                ` : ''}
                 
                 ${cityDays > 1 && city.itinerary_suggestion ? `
                     <div class="itinerary-suggestion">
