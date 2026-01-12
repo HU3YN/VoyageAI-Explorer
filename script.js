@@ -626,7 +626,7 @@ function addDemoResultsNotice() {
                 text-align: center;
                 padding: 0 20px;
             ">
-                <p>This demo uses <strong style="color: #FF6B35;">sample data only</strong>.</p>
+                <p>This demo has no AI features and only uses <strong style="color: #FF6B35;">sample data only</strong>.</p>
                 <p>For <strong style="color: #FFA500;">full AI-powered travel planning with VoyageAI</strong>, you need to set up locally.</p>
                 <p style="margin-top: 15px; font-size: 1.2rem; color: #f0f2ff; font-weight: 600;">
                     Here are the setup and run instructions:
@@ -1016,6 +1016,7 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
 
 
 
