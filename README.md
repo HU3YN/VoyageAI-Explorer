@@ -11,14 +11,23 @@ The application is automatically deployed to GitHub Pages:
 - **Source Code**: https://github.com/HU3YN/VoyageAI-Explorer
 
 ## 📁 Project Structure
+
 ├── static/ # Website files
+
 │ ├── index.html # Main application
+
 │ ├── style.css # Styles
+
 │ ├── script.js # Main logic
+
 │ └── main.js # Additional scripts
+
 ├── .github/workflows/ # CI/CD pipeline
+
 │ └── deploy.yml # Deployment workflow
+
 ├── package.json # Project metadata
+
 └── README.md # This file
 
 
