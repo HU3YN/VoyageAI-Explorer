@@ -7,7 +7,7 @@ A web-based interface for exploring VoyageAI embeddings and text analysis capabi
 
 ## 🚀 Live Deployment
 The application is automatically deployed to GitHub Pages:
-- **Live URL**: https://hu3yn.github.io/VoyageAI-Explorer/
+- **Demo Live URL**: https://hu3yn.github.io/VoyageAI-Explorer/
 - **Source Code**: https://github.com/HU3YN/VoyageAI-Explorer
 
 An AI-powered travel planning engine built with FastAPI, multi-agent AI, and Docker.
