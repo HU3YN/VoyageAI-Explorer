@@ -590,7 +590,6 @@ function addDemoResultsNotice() {
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
-            animation: noticeAppear 0.8s ease-out;
         ">
             <!-- Animated border top -->
             <div style="
@@ -599,7 +598,7 @@ function addDemoResultsNotice() {
                 left: 0;
                 right: 0;
                 height: 4px;
-                background: var(--gradient-primary);
+                background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
                 background-size: 200% 100%;
                 animation: gradientFlow 3s linear infinite;
             "></div>
@@ -607,25 +606,31 @@ function addDemoResultsNotice() {
             <!-- Title -->
             <h4 style="
                 margin-top: 0; 
-                margin-bottom: 25px;
-                background: var(--gradient-primary);
+                margin-bottom: 20px;
+                background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent; 
-                display: flex; 
-                align-items: center; 
-                gap: 15px;
                 font-size: 1.8rem;
                 font-weight: 800;
-                text-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+                text-align: center;
             ">
-                <span style="font-size: 2rem;">🐳</span> 
-                Setup & Run Instructions
+                🚨 This is a Demo Version
             </h4>
             
-            <!-- Intro -->
-            <div style="color: var(--text-light); margin-bottom: 25px; line-height: 1.7; font-size: 1.05rem;">
-                <p>This demo uses <strong style="color: var(--primary-orange);">sample data</strong>. For the <strong style="color: var(--accent-orange);">full AI-powered experience</strong>, follow these steps to run VoyageAI Explorer locally with Docker:</p>
+            <div style="
+                color: #a8b1d1; 
+                margin-bottom: 30px; 
+                line-height: 1.7; 
+                font-size: 1.1rem;
+                text-align: center;
+                padding: 0 20px;
+            ">
+                <p>This demo uses <strong style="color: #FF6B35;">sample data only</strong>.</p>
+                <p>For <strong style="color: #FFA500;">full AI-powered travel planning with VoyageAI</strong>, you need to set up locally.</p>
+                <p style="margin-top: 15px; font-size: 1.2rem; color: #f0f2ff; font-weight: 600;">
+                    Here are the setup and run instructions:
+                </p>
             </div>
             
             <!-- Step 1 -->
@@ -634,11 +639,10 @@ function addDemoResultsNotice() {
                 border-radius: 12px;
                 padding: 20px;
                 margin: 20px 0;
-                border-left: 4px solid var(--primary-orange);
-                transition: all 0.3s ease;
+                border-left: 4px solid #FF6B35;
             ">
                 <h5 style="
-                    color: var(--text-dark);
+                    color: #f0f2ff;
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 1.2rem;
@@ -648,7 +652,7 @@ function addDemoResultsNotice() {
                     gap: 10px;
                 ">
                     <span style="
-                        background: var(--primary-orange);
+                        background: #FF6B35;
                         color: white;
                         width: 28px;
                         height: 28px;
@@ -661,7 +665,7 @@ function addDemoResultsNotice() {
                     ">1</span>
                     Step 1 — Install Docker
                 </h5>
-                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">
+                <p style="color: #a8b1d1; margin-bottom: 15px; line-height: 1.6;">
                     Download and install Docker Desktop:
                 </p>
                 <div style="
@@ -673,20 +677,17 @@ function addDemoResultsNotice() {
                 ">
                     <a href="https://www.docker.com/products/docker-desktop/" target="_blank" 
                        style="
-                            color: var(--primary-orange);
+                            color: #FF6B35;
                             text-decoration: none;
                             font-weight: 600;
                             display: inline-flex;
                             align-items: center;
                             gap: 8px;
-                            transition: all 0.3s ease;
-                       "
-                       onmouseover="this.style.color='var(--accent-orange)'; this.style.gap='10px';"
-                       onmouseout="this.style.color='var(--primary-orange)'; this.style.gap='8px';">
+                       ">
                        🌐 https://www.docker.com/products/docker-desktop/
                     </a>
                 </div>
-                <p style="color: var(--text-light); margin-bottom: 10px; line-height: 1.6;">
+                <p style="color: #a8b1d1; margin-bottom: 10px; line-height: 1.6;">
                     After installing, restart and open Docker Desktop and wait until it says:
                 </p>
                 <div style="
@@ -701,7 +702,7 @@ function addDemoResultsNotice() {
                 ">
                     Engine running
                 </div>
-                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6;">
+                <p style="color: #a8b1d1; margin-top: 15px; line-height: 1.6;">
                     Verify installation:
                 </p>
                 <pre style="
@@ -710,7 +711,7 @@ function addDemoResultsNotice() {
                     background: rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     overflow-x: auto;
-                    color: var(--text-light);
+                    color: #a8b1d1;
                     font-family: 'Courier New', monospace;
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -724,11 +725,10 @@ docker compose version</pre>
                 border-radius: 12px;
                 padding: 20px;
                 margin: 20px 0;
-                border-left: 4px solid var(--accent-orange);
-                transition: all 0.3s ease;
+                border-left: 4px solid #FFA500;
             ">
                 <h5 style="
-                    color: var(--text-dark);
+                    color: #f0f2ff;
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 1.2rem;
@@ -738,7 +738,7 @@ docker compose version</pre>
                     gap: 10px;
                 ">
                     <span style="
-                        background: var(--accent-orange);
+                        background: #FFA500;
                         color: white;
                         width: 28px;
                         height: 28px;
@@ -757,15 +757,15 @@ docker compose version</pre>
                     background: rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     overflow-x: auto;
-                    color: var(--text-light);
+                    color: #a8b1d1;
                     font-family: 'Courier New', monospace;
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
                 ">git clone https://github.com/HU3YN/VoyageAI-Explorer.git
 
 cd VoyageAI-Explorer</pre>
-                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6; font-size: 0.95rem;">
-                    This folder is in your <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">C:\Users\your_profile_name</code>
+                <p style="color: #a8b1d1; margin-top: 15px; line-height: 1.6; font-size: 0.95rem;">
+                    This folder is in your <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; color: #a8b1d1;">C:\Users\your_profile_name</code>
                 </p>
             </div>
             
@@ -776,10 +776,9 @@ cd VoyageAI-Explorer</pre>
                 padding: 20px;
                 margin: 20px 0;
                 border-left: 4px solid #667eea;
-                transition: all 0.3s ease;
             ">
                 <h5 style="
-                    color: var(--text-dark);
+                    color: #f0f2ff;
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 1.2rem;
@@ -802,8 +801,8 @@ cd VoyageAI-Explorer</pre>
                     ">3</span>
                     Step 3 — Create your API key file
                 </h5>
-                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">
-                    This project uses a <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">.env</code> file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities (just keyword searching).
+                <p style="color: #a8b1d1; margin-bottom: 15px; line-height: 1.6;">
+                    This project uses a <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; color: #a8b1d1;">.env</code> file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities (just keyword searching).
                 </p>
                 <pre style="
                     margin: 10px 0;
@@ -811,13 +810,13 @@ cd VoyageAI-Explorer</pre>
                     background: rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     overflow-x: auto;
-                    color: var(--text-light);
+                    color: #a8b1d1;
                     font-family: 'Courier New', monospace;
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
                 ">cp .env.example .env</pre>
-                <p style="color: var(--text-light); margin-top: 15px; margin-bottom: 10px; line-height: 1.6;">
-                    Open <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">.env</code> and add your OpenAI API key:
+                <p style="color: #a8b1d1; margin-top: 15px; margin-bottom: 10px; line-height: 1.6;">
+                    Open <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; color: #a8b1d1;">.env</code> and add your OpenAI API key:
                 </p>
                 <pre style="
                     margin: 10px 0;
@@ -825,7 +824,7 @@ cd VoyageAI-Explorer</pre>
                     background: rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     overflow-x: auto;
-                    color: var(--text-light);
+                    color: #a8b1d1;
                     font-family: 'Courier New', monospace;
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -850,10 +849,9 @@ cd VoyageAI-Explorer</pre>
                 padding: 20px;
                 margin: 20px 0;
                 border-left: 4px solid #4CAF50;
-                transition: all 0.3s ease;
             ">
                 <h5 style="
-                    color: var(--text-dark);
+                    color: #f0f2ff;
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 1.2rem;
@@ -882,18 +880,18 @@ cd VoyageAI-Explorer</pre>
                     background: rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     overflow-x: auto;
-                    color: var(--text-light);
+                    color: #a8b1d1;
                     font-family: 'Courier New', monospace;
                     font-size: 0.9rem;
                     border: 1px solid rgba(255, 255, 255, 0.1);
                 ">docker compose up --build</pre>
-                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6;">
-                    This will take about <strong style="color: var(--accent-orange);">10-15 minutes</strong> to build.
+                <p style="color: #a8b1d1; margin-top: 15px; line-height: 1.6;">
+                    This will take about <strong style="color: #FFA500;">10-15 minutes</strong> to build.
                 </p>
-                <p style="color: var(--text-light); margin-top: 10px; line-height: 1.6;">
+                <p style="color: #a8b1d1; margin-top: 10px; line-height: 1.6;">
                     Docker will:
                 </p>
-                <ul style="color: var(--text-light); margin: 10px 0; padding-left: 20px; line-height: 1.8;">
+                <ul style="color: #a8b1d1; margin: 10px 0; padding-left: 20px; line-height: 1.8;">
                     <li>Create a Linux container</li>
                     <li>Install Python</li>
                     <li>Install all dependencies</li>
@@ -908,10 +906,9 @@ cd VoyageAI-Explorer</pre>
                 padding: 20px;
                 margin: 20px 0;
                 border-left: 4px solid #FFC107;
-                transition: all 0.3s ease;
             ">
                 <h5 style="
-                    color: var(--text-dark);
+                    color: #f0f2ff;
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 1.2rem;
@@ -949,9 +946,7 @@ cd VoyageAI-Explorer</pre>
                     Open your browser:
                     <div style="margin-top: 10px; font-size: 1.2rem;">
                         <a href="http://localhost:8000" target="_blank" 
-                           style="color: #FFD54F; text-decoration: none;"
-                           onmouseover="this.style.textDecoration='underline'; this.style.color='#FFECB3';"
-                           onmouseout="this.style.textDecoration='none'; this.style.color='#FFD54F';">
+                           style="color: #FFD54F; text-decoration: none;">
                            🌐 http://localhost:8000
                         </a>
                     </div>
@@ -965,20 +960,15 @@ cd VoyageAI-Explorer</pre>
                         display: inline-flex;
                         align-items: center;
                         gap: 12px;
-                        background: var(--gradient-primary); 
+                        background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%); 
                         color: white; 
                         padding: 15px 30px; 
                         border-radius: 10px; 
                         text-decoration: none;
                         font-weight: 700; 
                         font-size: 1.1rem;
-                        transition: all 0.3s ease;
                         box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-                        border: none;
-                        letter-spacing: 0.5px;
-                   "
-                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 30px rgba(255, 107, 53, 0.6)';"
-                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(255, 107, 53, 0.4)';">
+                   ">
                    <span style="font-size: 1.3rem;">⭐</span> 
                    Get Full Version on GitHub →
                 </a>
@@ -986,23 +976,9 @@ cd VoyageAI-Explorer</pre>
             
             <!-- Animation keyframes -->
             <style>
-                @keyframes noticeAppear {
-                    from {
-                        opacity: 0;
-                        transform: translateY(30px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
                 @keyframes gradientFlow {
                     0% { background-position: 0% 50%; }
                     100% { background-position: 200% 50%; }
-                }
-                .setup-step:hover {
-                    transform: translateX(5px);
-                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
                 }
             </style>
         </div>
@@ -1013,7 +989,6 @@ cd VoyageAI-Explorer</pre>
         resultsDiv.appendChild(notice);
     }
 }
-
 // Add fallback notice
 function addFallbackNotice() {
     const notice = document.createElement('div');
@@ -1041,5 +1016,6 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
 
 
