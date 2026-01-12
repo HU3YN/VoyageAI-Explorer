@@ -579,26 +579,432 @@ function addDemoResultsNotice() {
     const notice = document.createElement('div');
     notice.className = 'demo-notice';
     notice.innerHTML = `
-        <div style="background: #e3f2fd; border-left: 4px solid #2196f3; padding: 20px; margin: 30px 0; border-radius: 8px;">
-            <h4 style="margin-top: 0; color: #1565c0; display: flex; align-items: center; gap: 10px;">
-                🌐 GitHub Pages Demo Mode
+        <div style="
+            background: rgba(40, 45, 70, 0.9); 
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 35px; 
+            margin: 40px 0; 
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: noticeAppear 0.8s ease-out;
+        ">
+            <!-- Animated border top -->
+            <div style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: var(--gradient-primary);
+                background-size: 200% 100%;
+                animation: gradientFlow 3s linear infinite;
+            "></div>
+            
+            <!-- Title -->
+            <h4 style="
+                margin-top: 0; 
+                margin-bottom: 25px;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent; 
+                display: flex; 
+                align-items: center; 
+                gap: 15px;
+                font-size: 1.8rem;
+                font-weight: 800;
+                text-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+            ">
+                <span style="font-size: 2rem;">🐳</span> 
+                Setup & Run Instructions
             </h4>
-            <p>This itinerary was generated with <strong>sample data</strong> for demonstration purposes.</p>
-            <p>For <strong>real AI-powered travel planning with VoyageAI</strong>:</p>
-            <div style="background: white; padding: 15px; border-radius: 6px; margin: 15px 0;">
-                <pre style="margin: 0; font-size: 14px; overflow-x: auto;">
-git clone https://github.com/HU3YN/VoyageAI-Explorer.git
-cd VoyageAI-Explorer
-# Set up backend server for full AI features</pre>
+            
+            <!-- Intro -->
+            <div style="color: var(--text-light); margin-bottom: 25px; line-height: 1.7; font-size: 1.05rem;">
+                <p>This demo uses <strong style="color: var(--primary-orange);">sample data</strong>. For the <strong style="color: var(--accent-orange);">full AI-powered experience</strong>, follow these steps to run VoyageAI Explorer locally with Docker:</p>
             </div>
-            <p style="margin: 15px 0;">
+            
+            <!-- Step 1 -->
+            <div class="setup-step" style="
+                background: rgba(30, 35, 60, 0.7);
+                border-radius: 12px;
+                padding: 20px;
+                margin: 20px 0;
+                border-left: 4px solid var(--primary-orange);
+                transition: all 0.3s ease;
+            ">
+                <h5 style="
+                    color: var(--text-dark);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="
+                        background: var(--primary-orange);
+                        color: white;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    ">1</span>
+                    Step 1 — Install Docker
+                </h5>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">
+                    Download and install Docker Desktop:
+                </p>
+                <div style="
+                    background: rgba(20, 25, 45, 0.9);
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin: 15px 0;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">
+                    <a href="https://www.docker.com/products/docker-desktop/" target="_blank" 
+                       style="
+                            color: var(--primary-orange);
+                            text-decoration: none;
+                            font-weight: 600;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 8px;
+                            transition: all 0.3s ease;
+                       "
+                       onmouseover="this.style.color='var(--accent-orange)'; this.style.gap='10px';"
+                       onmouseout="this.style.color='var(--primary-orange)'; this.style.gap='8px';">
+                       🌐 https://www.docker.com/products/docker-desktop/
+                    </a>
+                </div>
+                <p style="color: var(--text-light); margin-bottom: 10px; line-height: 1.6;">
+                    After installing, restart and open Docker Desktop and wait until it says:
+                </p>
+                <div style="
+                    background: rgba(76, 175, 80, 0.1);
+                    border: 1px solid rgba(76, 175, 80, 0.3);
+                    color: #C8E6C9;
+                    padding: 12px 15px;
+                    border-radius: 6px;
+                    margin: 10px 0;
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.95rem;
+                ">
+                    Engine running
+                </div>
+                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6;">
+                    Verify installation:
+                </p>
+                <pre style="
+                    margin: 10px 0;
+                    padding: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    color: var(--text-light);
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">docker --version
+docker compose version</pre>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="setup-step" style="
+                background: rgba(30, 35, 60, 0.7);
+                border-radius: 12px;
+                padding: 20px;
+                margin: 20px 0;
+                border-left: 4px solid var(--accent-orange);
+                transition: all 0.3s ease;
+            ">
+                <h5 style="
+                    color: var(--text-dark);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="
+                        background: var(--accent-orange);
+                        color: white;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    ">2</span>
+                    Step 2 — Clone the project
+                </h5>
+                <pre style="
+                    margin: 10px 0;
+                    padding: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    color: var(--text-light);
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">git clone https://github.com/HU3YN/VoyageAI-Explorer.git
+
+cd VoyageAI-Explorer</pre>
+                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6; font-size: 0.95rem;">
+                    This folder is in your <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">C:\Users\your_profile_name</code>
+                </p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="setup-step" style="
+                background: rgba(30, 35, 60, 0.7);
+                border-radius: 12px;
+                padding: 20px;
+                margin: 20px 0;
+                border-left: 4px solid #667eea;
+                transition: all 0.3s ease;
+            ">
+                <h5 style="
+                    color: var(--text-dark);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="
+                        background: #667eea;
+                        color: white;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    ">3</span>
+                    Step 3 — Create your API key file
+                </h5>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">
+                    This project uses a <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">.env</code> file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities (just keyword searching).
+                </p>
+                <pre style="
+                    margin: 10px 0;
+                    padding: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    color: var(--text-light);
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">cp .env.example .env</pre>
+                <p style="color: var(--text-light); margin-top: 15px; margin-bottom: 10px; line-height: 1.6;">
+                    Open <code style="background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace;">.env</code> and add your OpenAI API key:
+                </p>
+                <pre style="
+                    margin: 10px 0;
+                    padding: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    color: var(--text-light);
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">OPENAI_API_KEY=sk-your-api-key-here</pre>
+                <div style="
+                    background: rgba(255, 107, 53, 0.1);
+                    border: 1px solid rgba(255, 107, 53, 0.3);
+                    color: #FFD8B5;
+                    padding: 12px 15px;
+                    border-radius: 6px;
+                    margin-top: 15px;
+                    font-size: 0.95rem;
+                ">
+                    ⚠️ <strong>Important:</strong> Do NOT upload this file to GitHub.
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="setup-step" style="
+                background: rgba(30, 35, 60, 0.7);
+                border-radius: 12px;
+                padding: 20px;
+                margin: 20px 0;
+                border-left: 4px solid #4CAF50;
+                transition: all 0.3s ease;
+            ">
+                <h5 style="
+                    color: var(--text-dark);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="
+                        background: #4CAF50;
+                        color: white;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    ">4</span>
+                    Step 4 — Run the app
+                </h5>
+                <pre style="
+                    margin: 10px 0;
+                    padding: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    color: var(--text-light);
+                    font-family: 'Courier New', monospace;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                ">docker compose up --build</pre>
+                <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6;">
+                    This will take about <strong style="color: var(--accent-orange);">10-15 minutes</strong> to build.
+                </p>
+                <p style="color: var(--text-light); margin-top: 10px; line-height: 1.6;">
+                    Docker will:
+                </p>
+                <ul style="color: var(--text-light); margin: 10px 0; padding-left: 20px; line-height: 1.8;">
+                    <li>Create a Linux container</li>
+                    <li>Install Python</li>
+                    <li>Install all dependencies</li>
+                    <li>Start the FastAPI server</li>
+                </ul>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="setup-step" style="
+                background: rgba(30, 35, 60, 0.7);
+                border-radius: 12px;
+                padding: 20px;
+                margin: 20px 0;
+                border-left: 4px solid #FFC107;
+                transition: all 0.3s ease;
+            ">
+                <h5 style="
+                    color: var(--text-dark);
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="
+                        background: #FFC107;
+                        color: black;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    ">5</span>
+                    Step 5 — Open the app
+                </h5>
+                <div style="
+                    background: rgba(255, 193, 7, 0.1);
+                    border: 1px solid rgba(255, 193, 7, 0.3);
+                    color: #FFF3CD;
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin: 15px 0;
+                    font-family: 'Courier New', monospace;
+                    font-size: 1rem;
+                    text-align: center;
+                    font-weight: 600;
+                ">
+                    Open your browser:
+                    <div style="margin-top: 10px; font-size: 1.2rem;">
+                        <a href="http://localhost:8000" target="_blank" 
+                           style="color: #FFD54F; text-decoration: none;"
+                           onmouseover="this.style.textDecoration='underline'; this.style.color='#FFECB3';"
+                           onmouseout="this.style.textDecoration='none'; this.style.color='#FFD54F';">
+                           🌐 http://localhost:8000
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GitHub Button -->
+            <div style="text-align: center; margin-top: 30px;">
                 <a href="https://github.com/HU3YN/VoyageAI-Explorer" target="_blank" 
-                   style="display: inline-block; background: #2196f3; color: white; 
-                          padding: 10px 20px; border-radius: 5px; text-decoration: none;
-                          font-weight: bold;">
+                   style="
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 12px;
+                        background: var(--gradient-primary); 
+                        color: white; 
+                        padding: 15px 30px; 
+                        border-radius: 10px; 
+                        text-decoration: none;
+                        font-weight: 700; 
+                        font-size: 1.1rem;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+                        border: none;
+                        letter-spacing: 0.5px;
+                   "
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 30px rgba(255, 107, 53, 0.6)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(255, 107, 53, 0.4)';">
+                   <span style="font-size: 1.3rem;">⭐</span> 
                    Get Full Version on GitHub →
                 </a>
-            </p>
+            </div>
+            
+            <!-- Animation keyframes -->
+            <style>
+                @keyframes noticeAppear {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                @keyframes gradientFlow {
+                    0% { background-position: 0% 50%; }
+                    100% { background-position: 200% 50%; }
+                }
+                .setup-step:hover {
+                    transform: translateX(5px);
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                }
+            </style>
         </div>
     `;
     
@@ -635,3 +1041,4 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
 
 // Initialize
 console.log('✅ VoyageAI Explorer ready');
+
