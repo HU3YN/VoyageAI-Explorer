@@ -1,4 +1,35 @@
-# AI Travel Planner
+# VoyageAI Explorer
+
+[![GitHub Pages Deployment](https://github.com/HU3YN/VoyageAI-Explorer/actions/workflows/deploy.yml/badge.svg)](https://github.com/HU3YN/VoyageAI-Explorer/actions/workflows/deploy.yml)
+[![Live Website](https://img.shields.io/badge/Live-Website-brightgreen)](https://hu3yn.github.io/VoyageAI-Explorer/)
+
+A web-based interface for exploring VoyageAI embeddings and text analysis capabilities.
+
+## 🚀 Live Deployment
+The application is automatically deployed to GitHub Pages:
+- **Live URL**: https://hu3yn.github.io/VoyageAI-Explorer/
+- **Source Code**: https://github.com/HU3YN/VoyageAI-Explorer
+
+## 📁 Project Structure
+├── static/ # Website files
+│ ├── index.html # Main application
+│ ├── style.css # Styles
+│ ├── script.js # Main logic
+│ └── main.js # Additional scripts
+├── .github/workflows/ # CI/CD pipeline
+│ └── deploy.yml # Deployment workflow
+├── package.json # Project metadata
+└── README.md # This file
+
+
+## 🛠️ Local Development
+Open `static/index.html` in your browser or use:
+
+# Using Python
+python3 -m http.server 8000
+
+# Using Node.js
+npx serve static/
 
 An AI-powered travel planning engine built with FastAPI, multi-agent AI, and Docker.
 
