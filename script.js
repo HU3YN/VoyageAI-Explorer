@@ -1,4 +1,62 @@
 // script.js
+// ============================================
+// MOCK API FOR GITHUB PAGES
+// ============================================
+console.log('🔧 Running on GitHub Pages - Using mock API');
+
+// Check if we're on GitHub Pages
+const isGitHubPages = window.location.hostname.includes('github.io');
+
+// Mock API function for GitHub Pages
+async function mockTravelAPI(destination, days, budget, interests) {
+    console.log('📡 Mock API called with:', { destination, days, budget, interests });
+    
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    // Return mock travel plan
+    return {
+        success: true,
+        plan: {
+            destination: destination,
+            duration: `${days} days`,
+            budget: `$${budget}`,
+            summary: `AI-generated ${days}-day trip to ${destination} with ${interests.join(', ')} activities.`,
+            itinerary: generateMockItinerary(destination, days, interests),
+            recommendations: [
+                `Visit the main attractions in ${destination}`,
+                `Try local cuisine within your $${budget} budget`,
+                `Explore ${interests.join(' and ')}-related activities`
+            ],
+            tips: [
+                "Book accommodations in advance",
+                "Check local weather forecasts",
+                "Carry local currency for small purchases"
+            ]
+        }
+    };
+}
+
+function generateMockItinerary(destination, days, interests) {
+    const itinerary = [];
+    for (let i = 1; i <= days; i++) {
+        itinerary.push({
+            day: i,
+            title: `Day ${i}: ${destination} Exploration`,
+            activities: [
+                `Morning: ${interests[0] || 'Sightseeing'} tour`,
+                `Afternoon: Local cuisine experience`,
+                `Evening: ${interests[1] || 'Cultural'} activities`
+            ]
+        });
+    }
+    return itinerary;
+}
+
+// ============================================
+// MAIN APPLICATION CODE (YOUR EXISTING CODE)
+// ============================================
+// ... your existing code continues below ...
 document.getElementById("planTripButton").addEventListener("click", async () => {
     const userInput = document.getElementById("userInput").value.trim();
     const totalDays = parseInt(document.getElementById("daysInput").value) || 3;
@@ -216,4 +274,5 @@ document.getElementById("userInput").addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
         document.getElementById("planTripButton").click();
     }
+
 });
