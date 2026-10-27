@@ -3,17 +3,20 @@
 [![GitHub Pages Deployment](https://github.com/HU3YN/VoyageAI-Explorer/actions/workflows/deploy.yml/badge.svg)](https://github.com/HU3YN/VoyageAI-Explorer/actions/workflows/deploy.yml)
 [![Live Website](https://img.shields.io/badge/Live-Website-brightgreen)](https://hu3yn.github.io/VoyageAI-Explorer/)
 
-A web-based interface for exploring VoyageAI embeddings and text analysis capabilities.
+A travel-planning web app. You type your interests and a number of days, and it returns a multi-city itinerary with day-by-day plans and the reason each city was picked.
 
 ## 🚀 Live Deployment
 The application is automatically deployed to GitHub Pages:
 - **Demo Live URL**: https://hu3yn.github.io/VoyageAI-Explorer/
 - **Source Code**: https://github.com/HU3YN/VoyageAI-Explorer
 
-An AI-powered travel planning engine built with FastAPI, multi-agent AI, and Docker.
+Note: the GitHub Pages demo runs in demo mode only. To run the full app, follow the setup steps below.
 
-This project generates custom travel itineraries using semantic matching,
-database search, and AI reasoning.
+## How it works
+
+A FastAPI endpoint passes the request to a master agent that coordinates four agents: preference, destination, itinerary and explanation. They use the OpenAI API and a SQLite database of 476 cities and 2,489 activities. Built with Python, FastAPI, SQLite, the OpenAI API and Docker.
+
+Solo project. AI helped with the logic and debugging.
 
 ---
 
@@ -57,7 +60,7 @@ This folder is in your C:\Users\your_profile_name
 
 ## Step 3 — Create your API key file
 
-This project uses a .env file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities just keyword searching
+This project uses a .env file to store secrets. If you do not have an API key the program will still work it just will not have all AI semantic search capabilities just keyword searching. In that mode the matches are weaker and can include duplicates
 
 Copy the example file:
 
